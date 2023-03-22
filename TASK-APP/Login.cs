@@ -20,7 +20,7 @@ namespace TASK_APP
         public Login()
         {
             InitializeComponent();
-            SQLiteConnection conn = new SQLiteConnection(@"data source = E:\TSK-APP\taskAppDB.db");
+            SQLiteConnection conn = new SQLiteConnection(@"data source = C:\Users\User\Desktop\TSK-APP\taskAppDB.db");
             conn.Open();
 
             string query = "SELECT UserName, Password, UserID from Login";

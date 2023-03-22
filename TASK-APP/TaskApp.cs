@@ -80,7 +80,7 @@ namespace TASK_APP
                         listBox1.DataSource = dt;
                         listBox1.DisplayMember = "Task_Name";
             */
-            SQLiteConnection conn = new SQLiteConnection(@"data source = E:\TSK-APP\taskAppDB.db");
+            SQLiteConnection conn = new SQLiteConnection(@"data source = C:\Users\User\Desktop\TSK-APP\taskAppDB.db");
             conn.Open();
 
             string query = "SELECT TaskID, Task_Name, Task_Status from Task where UserID = " + Login.uid;
@@ -105,7 +105,7 @@ namespace TASK_APP
 
         private void AmendDatabase(string txtQuery)
         {
-            SQLiteConnection conn = new SQLiteConnection(@"data source = E:\TSK-APP\taskAppDB.db");
+            SQLiteConnection conn = new SQLiteConnection(@"data source = C:\Users\User\Desktop\TSK-APP\taskAppDB.db");
             conn.Open();
 
             string query = txtQuery;
