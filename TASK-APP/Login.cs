@@ -61,21 +61,8 @@ namespace TASK_APP
                     login = true;
                     break;
                 }
-                //else
-                //{
-                //    string message = "Incorrect login details";
-                //    MessageBox.Show(message);
-                //}
-            }
-
-/*            else
-            {
-                this.Hide();
-                Form3 f3 = new Form3();
-                f3.Show();
 
             }
-*/
 
 
             if (login == false)

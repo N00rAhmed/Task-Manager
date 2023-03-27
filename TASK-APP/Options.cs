@@ -22,9 +22,6 @@ namespace TASK_APP
             this.Hide();
             Login login = new Login();
             login.Show();
-/*            Form2 f2 = new Form2();
-            f2.Show();
-*/
 
         }
 

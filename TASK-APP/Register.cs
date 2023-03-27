@@ -32,8 +32,6 @@ namespace TASK_APP
             string dbquery = "INSERT INTO User(First_Name, Last_Name, DOB, UserName, Password)" + "VALUES ('" + firstname.Text + "', '" + lastname.Text + "', '" + DOB.Text + "', '" + username.Text + "', '" + password.Text + "')";
             string query = "INSERT INTO Login(UserName, Password, UserID) SELECT UserName, Password, UserID FROM User";
 
-/*            INSERT INTO Login(UserName, Password, UserID) SELECT UserName, Password, UserID FROM User;
-*/
             AmendDatabase(dbquery);
             AmendDatabase(query);
 

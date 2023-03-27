@@ -174,6 +174,7 @@
             this.Controls.Add(this.label1);
             this.Name = "TaskApp";
             this.Text = "Form3";
+            this.Load += new System.EventHandler(this.TaskApp_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTasks)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -32,11 +32,6 @@ namespace TASK_APP
             adapter.Fill(dt);
 
             dgvData.DataSource = dt;
-            //dgvTasks.Columns[3].Visible = false;
-
-
-
-
 
             conn.Close();
 
@@ -46,10 +41,7 @@ namespace TASK_APP
 
         private void dgvData_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-/*            string dbquery = "SELECT * FROM User";
-            AmendDatabase(dbquery);
-            LoadData();
-*/
+
         }
 
         private void logoutBtn_Click(object sender, EventArgs e)
@@ -57,6 +49,14 @@ namespace TASK_APP
             this.Hide();
             Options options = new Options();
             options.Show();
+
+        }
+
+        private void TasksBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AllTasksPage alltaskspage = new AllTasksPage();
+            alltaskspage.Show();
 
         }
     }

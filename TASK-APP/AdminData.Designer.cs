@@ -30,13 +30,14 @@
         {
             this.dgvData = new System.Windows.Forms.DataGridView();
             this.logoutBtn = new System.Windows.Forms.Button();
+            this.TasksBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvData
             // 
             this.dgvData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvData.Location = new System.Drawing.Point(134, 81);
+            this.dgvData.Location = new System.Drawing.Point(27, 64);
             this.dgvData.Name = "dgvData";
             this.dgvData.Size = new System.Drawing.Size(553, 305);
             this.dgvData.TabIndex = 0;
@@ -52,14 +53,25 @@
             this.logoutBtn.UseVisualStyleBackColor = true;
             this.logoutBtn.Click += new System.EventHandler(this.logoutBtn_Click);
             // 
-            // Form5
+            // TasksBtn
+            // 
+            this.TasksBtn.Location = new System.Drawing.Point(653, 138);
+            this.TasksBtn.Name = "TasksBtn";
+            this.TasksBtn.Size = new System.Drawing.Size(105, 47);
+            this.TasksBtn.TabIndex = 7;
+            this.TasksBtn.Text = "Tasks";
+            this.TasksBtn.UseVisualStyleBackColor = true;
+            this.TasksBtn.Click += new System.EventHandler(this.TasksBtn_Click);
+            // 
+            // AdminData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.TasksBtn);
             this.Controls.Add(this.logoutBtn);
             this.Controls.Add(this.dgvData);
-            this.Name = "Form5";
+            this.Name = "AdminData";
             this.Text = "Form5";
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).EndInit();
             this.ResumeLayout(false);
@@ -70,5 +82,6 @@
 
         private System.Windows.Forms.DataGridView dgvData;
         private System.Windows.Forms.Button logoutBtn;
+        private System.Windows.Forms.Button TasksBtn;
     }
 }
