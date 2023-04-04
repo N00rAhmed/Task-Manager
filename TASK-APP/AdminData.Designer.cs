@@ -31,7 +31,9 @@
             this.dgvData = new System.Windows.Forms.DataGridView();
             this.logoutBtn = new System.Windows.Forms.Button();
             this.TasksBtn = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvData
@@ -63,6 +65,16 @@
             this.TasksBtn.UseVisualStyleBackColor = true;
             this.TasksBtn.Click += new System.EventHandler(this.TasksBtn_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TASK_APP.Properties.Resources.tree_736885__480;
+            this.pictureBox1.Location = new System.Drawing.Point(-1, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(801, 449);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
             // AdminData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -71,9 +83,11 @@
             this.Controls.Add(this.TasksBtn);
             this.Controls.Add(this.logoutBtn);
             this.Controls.Add(this.dgvData);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "AdminData";
             this.Text = "Form5";
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -83,5 +97,6 @@
         private System.Windows.Forms.DataGridView dgvData;
         private System.Windows.Forms.Button logoutBtn;
         private System.Windows.Forms.Button TasksBtn;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

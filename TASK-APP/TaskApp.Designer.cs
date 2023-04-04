@@ -40,7 +40,9 @@
             this.ID = new System.Windows.Forms.Label();
             this.Complete = new System.Windows.Forms.Button();
             this.Incomplete = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTasks)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -110,7 +112,7 @@
             // 
             // updateBtn
             // 
-            this.updateBtn.Location = new System.Drawing.Point(567, 103);
+            this.updateBtn.Location = new System.Drawing.Point(540, 97);
             this.updateBtn.Name = "updateBtn";
             this.updateBtn.Size = new System.Drawing.Size(83, 33);
             this.updateBtn.TabIndex = 8;
@@ -155,6 +157,16 @@
             this.Incomplete.UseVisualStyleBackColor = true;
             this.Incomplete.Click += new System.EventHandler(this.Incomplete_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::TASK_APP.Properties.Resources.istockphoto_517188688_1024x1024;
+            this.pictureBox1.Location = new System.Drawing.Point(-1, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(801, 455);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
+            // 
             // TaskApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -172,10 +184,12 @@
             this.Controls.Add(this.taskInput);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "TaskApp";
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.TaskApp_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTasks)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -195,5 +209,6 @@
         private System.Windows.Forms.Label ID;
         private System.Windows.Forms.Button Complete;
         private System.Windows.Forms.Button Incomplete;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
