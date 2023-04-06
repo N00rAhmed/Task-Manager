@@ -89,7 +89,7 @@ namespace TASK_APP
         private void button3_Click(object sender, EventArgs e)
         {
   
-            string dbquery = "DELETE FROM Task WHERE Task_Name = '" + taskInput.Text + "'";
+            string dbquery = "DELETE FROM Task WHERE TaskID = '" + IDField.Text + "'";
             AmendDatabase(dbquery);
             LoadData();
 

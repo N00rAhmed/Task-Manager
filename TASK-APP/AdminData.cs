@@ -37,6 +37,18 @@ namespace TASK_APP
 
         }
 
+        private void AmendDatabase(string txtQuery)
+        {
+            SQLiteConnection conn = new SQLiteConnection(@"data source = C:\Users\User\Desktop\TSK-APP\taskAppDB.db");
+            conn.Open();
+
+            string query = txtQuery;
+            SQLiteCommand cmd = new SQLiteCommand(query, conn);
+            cmd.ExecuteNonQuery();
+
+            conn.Close();
+            UserIDField.Text = "";
+        }
 
 
         private void dgvData_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -57,6 +69,26 @@ namespace TASK_APP
             this.Hide();
             AllTasksPage alltaskspage = new AllTasksPage();
             alltaskspage.Show();
+
+        }
+
+
+
+        private void UderIDField_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DeleteUser_Click(object sender, EventArgs e)
+        {
+            string dbquery = "DELETE FROM User WHERE UserID = '" + UserIDField.Text + "'";
+            string query = "DELETE FROM Task WHERE UserID = '" + UserIDField.Text + "'";
+
+            AmendDatabase(dbquery);
+            AmendDatabase(query);
+
+
+            LoadData();
 
         }
     }
