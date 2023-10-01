@@ -25,6 +25,7 @@ namespace TASK_APP
             NpgsqlConnection conn = new NpgsqlConnection(DB.DBLocation);
             conn.Open();
 
+            /*SQL query made in cockroachDB*/
             string query = "SELECT * FROM Login";
             /*\"User\"*/
             NpgsqlCommand cmd = new NpgsqlCommand(query, conn);
