@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Npgsql;
 
 namespace TASK_APP
 {
@@ -20,14 +21,14 @@ namespace TASK_APP
         }
         private void LoadData()
         {
-            SQLiteConnection conn = new SQLiteConnection(@"data source = C:\Users\User\Desktop\TSK-APP\taskAppDB.db");
+            NpgsqlConnection conn = new NpgsqlConnection(DB.DBLocation);
             conn.Open();
 
             string query = "SELECT * FROM Task";
-            SQLiteCommand cmd = new SQLiteCommand(query, conn);
+            NpgsqlCommand cmd = new NpgsqlCommand(query, conn);
 
             DataTable dt = new DataTable();
-            SQLiteDataAdapter adapter = new SQLiteDataAdapter(cmd);
+            NpgsqlDataAdapter adapter = new NpgsqlDataAdapter(cmd);
             adapter.Fill(dt);
 
             dgvTasks.DataSource = dt;
@@ -38,11 +39,11 @@ namespace TASK_APP
 
         private void AmendDatabase(string txtQuery)
         {
-            SQLiteConnection conn = new SQLiteConnection(@"data source = C:\Users\User\Desktop\TSK-APP\taskAppDB.db");
+            NpgsqlConnection conn = new NpgsqlConnection(DB.DBLocation);
             conn.Open();
 
             string query = txtQuery;
-            SQLiteCommand cmd = new SQLiteCommand(query, conn);
+            NpgsqlCommand cmd = new NpgsqlCommand(query, conn);
             cmd.ExecuteNonQuery();
 
             conn.Close();
@@ -90,6 +91,11 @@ namespace TASK_APP
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }

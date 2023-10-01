@@ -11,7 +11,7 @@ using System.Xml.Linq;
 using System.Data.SQLite;
 using System.Data.SqlClient;
 using System.Data.Entity.Core.Common.CommandTrees.ExpressionBuilder;
-
+using Npgsql;
 
 namespace TASK_APP
 {
@@ -26,14 +26,14 @@ namespace TASK_APP
 
         private void LoadData()
         {
-            SQLiteConnection conn = new SQLiteConnection(@"data source = C:\Users\User\Desktop\TSK-APP\taskAppDB.db");
+            NpgsqlConnection conn = new NpgsqlConnection(DB.DBLocation);
             conn.Open();
 
             string query = "SELECT TaskID, Task_Name, Task_Status from Task where UserID = " + Login.uid;
-            SQLiteCommand cmd = new SQLiteCommand(query, conn);
+            NpgsqlCommand cmd = new NpgsqlCommand(query, conn);
 
             DataTable dt = new DataTable();
-            SQLiteDataAdapter adapter = new SQLiteDataAdapter(cmd);
+            NpgsqlDataAdapter adapter = new NpgsqlDataAdapter(cmd);
             adapter.Fill(dt);
 
             dgvTasks.DataSource = dt;
@@ -44,11 +44,11 @@ namespace TASK_APP
 
         private void AmendDatabase(string txtQuery)
         {
-            SQLiteConnection conn = new SQLiteConnection(@"data source = C:\Users\User\Desktop\TSK-APP\taskAppDB.db");
+            NpgsqlConnection conn = new NpgsqlConnection(DB.DBLocation);
             conn.Open();
 
             string query = txtQuery;
-            SQLiteCommand cmd = new SQLiteCommand(query, conn);
+            NpgsqlCommand cmd = new NpgsqlCommand(query, conn);
             cmd.ExecuteNonQuery();
 
             conn.Close();
@@ -83,12 +83,12 @@ namespace TASK_APP
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-        
+
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-  
+
             string dbquery = "DELETE FROM Task WHERE TaskID = '" + IDField.Text + "'";
             AmendDatabase(dbquery);
             LoadData();
@@ -140,6 +140,11 @@ namespace TASK_APP
         }
 
         private void TaskApp_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }

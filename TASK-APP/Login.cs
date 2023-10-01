@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using Npgsql;
 
 namespace TASK_APP
 {
@@ -20,14 +21,14 @@ namespace TASK_APP
         public Login()
         {
             InitializeComponent();
-            SQLiteConnection conn = new SQLiteConnection(@"data source = C:\Users\User\Desktop\TSK-APP\taskAppDB.db");
+            NpgsqlConnection conn = new NpgsqlConnection(DB.DBLocation);
             conn.Open();
 
             string query = "SELECT UserName, Password, UserID from Login";
-            SQLiteCommand cmd = new SQLiteCommand(query, conn);
+            NpgsqlCommand cmd = new NpgsqlCommand(query, conn);
 
 
-            SQLiteDataAdapter adapter = new SQLiteDataAdapter(cmd);
+            NpgsqlDataAdapter adapter = new NpgsqlDataAdapter(cmd);
             adapter.Fill(dt);
             conn.Close();
 
@@ -52,7 +53,7 @@ namespace TASK_APP
             for (int i = 0; i < dt.Rows.Count; i++)
             {
                 DataRow dr = dt.Rows[i];
-                if(dr["UserName"].ToString() == nameInput.Text && dr["Password"].ToString() == passwordInput.Text)
+                if (dr["UserName"].ToString() == nameInput.Text && dr["Password"].ToString() == passwordInput.Text)
                 {
                     uid = dr["UserID"].ToString();
 
@@ -83,6 +84,11 @@ namespace TASK_APP
         }
 
         private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }

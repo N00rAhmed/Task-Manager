@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Npgsql;
 
 namespace TASK_APP
 {
@@ -43,6 +44,11 @@ namespace TASK_APP
             this.Hide();
             AdminLogin adminlogin = new AdminLogin();
             adminlogin.Show();
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
 
         }
     }

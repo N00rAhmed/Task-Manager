@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using Npgsql;
 
 namespace TASK_APP
 {
@@ -21,14 +22,15 @@ namespace TASK_APP
         }
         private void LoadData()
         {
-            SQLiteConnection conn = new SQLiteConnection(@"data source = C:\Users\User\Desktop\TSK-APP\taskAppDB.db");
+            NpgsqlConnection conn = new NpgsqlConnection(DB.DBLocation);
             conn.Open();
 
-            string query = "SELECT * FROM User";
-            SQLiteCommand cmd = new SQLiteCommand(query, conn);
+            string query = "SELECT * FROM Login";
+            /*\"User\"*/
+            NpgsqlCommand cmd = new NpgsqlCommand(query, conn);
 
             DataTable dt = new DataTable();
-            SQLiteDataAdapter adapter = new SQLiteDataAdapter(cmd);
+            NpgsqlDataAdapter adapter = new NpgsqlDataAdapter(cmd);
             adapter.Fill(dt);
 
             dgvData.DataSource = dt;
@@ -39,11 +41,11 @@ namespace TASK_APP
 
         private void AmendDatabase(string txtQuery)
         {
-            SQLiteConnection conn = new SQLiteConnection(@"data source = C:\Users\User\Desktop\TSK-APP\taskAppDB.db");
+            NpgsqlConnection conn = new NpgsqlConnection(DB.DBLocation);
             conn.Open();
 
             string query = txtQuery;
-            SQLiteCommand cmd = new SQLiteCommand(query, conn);
+            NpgsqlCommand cmd = new NpgsqlCommand(query, conn);
             cmd.ExecuteNonQuery();
 
             conn.Close();
@@ -81,14 +83,15 @@ namespace TASK_APP
 
         private void DeleteUser_Click(object sender, EventArgs e)
         {
-            string dbquery = "DELETE FROM User WHERE UserID = '" + UserIDField.Text + "'";
+            string dbquery = "DELETE FROM Login WHERE UserID = '" + UserIDField.Text + "'";
             string query = "DELETE FROM Task WHERE UserID = '" + UserIDField.Text + "'";
-
             AmendDatabase(dbquery);
             AmendDatabase(query);
-
-
             LoadData();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
 
         }
     }

@@ -12,6 +12,7 @@ using System.Xml.Linq;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using System.Data.SQLite;
 using System.Data.SqlClient;
+using Npgsql;
 
 namespace TASK_APP
 {
@@ -26,29 +27,25 @@ namespace TASK_APP
         private void createAccountBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-
-
-
-            string dbquery = "INSERT INTO User(First_Name, Last_Name, DOB, UserName, Password)" + "VALUES ('" + firstname.Text + "', '" + lastname.Text + "', '" + DOB.Text + "', '" + username.Text + "', '" + password.Text + "')";
-            string query = "INSERT INTO Login(UserName, Password, UserID) SELECT UserName, Password, UserID FROM User";
+            /*            string dbquery = "INSERT INTO \"User\"(First_Name, Last_Name, DOB, username, Password)" + "VALUES ('" + firstname.Text + "', '" + lastname.Text + "', '" + DOB.Text + "', '" + username.Text + "', '" + password.Text + "')";
+            */
+            string dbquery = "INSERT INTO \"User\" (First_Name, Last_Name, DOB, username, Password) VALUES ('" + firstname.Text + "', '" + lastname.Text + "', '" + DOB.Text + "', '" + username.Text + "', '" + password.Text + "')";
+            string query = "INSERT INTO Login(username, Password, UserID) SELECT username, Password, UserID FROM \"User\"";
 
             AmendDatabase(dbquery);
             AmendDatabase(query);
 
-
             Login login = new Login();
             login.Show();
-
-
         }
 
         private void AmendDatabase(string txtQuery)
         {
-            SQLiteConnection conn = new SQLiteConnection(@"data source = C:\Users\User\Desktop\TSK-APP\taskAppDB.db");
+            NpgsqlConnection conn = new NpgsqlConnection(DB.DBLocation);
             conn.Open();
 
             string query = txtQuery;
-            SQLiteCommand cmd = new SQLiteCommand(query, conn);
+            NpgsqlCommand cmd = new NpgsqlCommand(query, conn);
             cmd.ExecuteNonQuery();
 
             conn.Close();
@@ -83,6 +80,11 @@ namespace TASK_APP
         }
 
         private void password_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }

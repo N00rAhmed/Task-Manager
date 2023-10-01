@@ -42,17 +42,20 @@
             // dgvData
             // 
             this.dgvData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvData.Location = new System.Drawing.Point(27, 64);
+            this.dgvData.Location = new System.Drawing.Point(36, 79);
+            this.dgvData.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvData.Name = "dgvData";
-            this.dgvData.Size = new System.Drawing.Size(553, 305);
+            this.dgvData.RowHeadersWidth = 51;
+            this.dgvData.Size = new System.Drawing.Size(737, 375);
             this.dgvData.TabIndex = 0;
             this.dgvData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvData_CellContentClick);
             // 
             // logoutBtn
             // 
-            this.logoutBtn.Location = new System.Drawing.Point(652, 23);
+            this.logoutBtn.Location = new System.Drawing.Point(869, 28);
+            this.logoutBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.logoutBtn.Name = "logoutBtn";
-            this.logoutBtn.Size = new System.Drawing.Size(106, 39);
+            this.logoutBtn.Size = new System.Drawing.Size(141, 48);
             this.logoutBtn.TabIndex = 6;
             this.logoutBtn.Text = "logout";
             this.logoutBtn.UseVisualStyleBackColor = true;
@@ -60,9 +63,10 @@
             // 
             // TasksBtn
             // 
-            this.TasksBtn.Location = new System.Drawing.Point(653, 138);
+            this.TasksBtn.Location = new System.Drawing.Point(871, 170);
+            this.TasksBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TasksBtn.Name = "TasksBtn";
-            this.TasksBtn.Size = new System.Drawing.Size(105, 47);
+            this.TasksBtn.Size = new System.Drawing.Size(140, 58);
             this.TasksBtn.TabIndex = 7;
             this.TasksBtn.Text = "Tasks";
             this.TasksBtn.UseVisualStyleBackColor = true;
@@ -72,34 +76,39 @@
             // 
             this.pictureBox1.Image = global::TASK_APP.Properties.Resources.tree_736885__480;
             this.pictureBox1.Location = new System.Drawing.Point(-1, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(801, 449);
+            this.pictureBox1.Size = new System.Drawing.Size(1068, 553);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // UserIDField
             // 
-            this.UserIDField.Location = new System.Drawing.Point(641, 248);
+            this.UserIDField.Location = new System.Drawing.Point(855, 305);
+            this.UserIDField.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.UserIDField.Name = "UserIDField";
-            this.UserIDField.Size = new System.Drawing.Size(67, 20);
+            this.UserIDField.Size = new System.Drawing.Size(88, 22);
             this.UserIDField.TabIndex = 9;
             this.UserIDField.TextChanged += new System.EventHandler(this.UderIDField_TextChanged);
             // 
             // UserID
             // 
             this.UserID.AutoSize = true;
-            this.UserID.Location = new System.Drawing.Point(595, 251);
+            this.UserID.Location = new System.Drawing.Point(793, 309);
+            this.UserID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.UserID.Name = "UserID";
-            this.UserID.Size = new System.Drawing.Size(40, 13);
+            this.UserID.Size = new System.Drawing.Size(49, 16);
             this.UserID.TabIndex = 10;
             this.UserID.Text = "UserID";
             // 
             // DeleteUser
             // 
-            this.DeleteUser.Location = new System.Drawing.Point(714, 241);
+            this.DeleteUser.Location = new System.Drawing.Point(952, 297);
+            this.DeleteUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DeleteUser.Name = "DeleteUser";
-            this.DeleteUser.Size = new System.Drawing.Size(74, 33);
+            this.DeleteUser.Size = new System.Drawing.Size(99, 41);
             this.DeleteUser.TabIndex = 11;
             this.DeleteUser.Text = "Delete";
             this.DeleteUser.UseVisualStyleBackColor = true;
@@ -107,9 +116,9 @@
             // 
             // AdminData
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.DeleteUser);
             this.Controls.Add(this.UserID);
             this.Controls.Add(this.UserIDField);
@@ -117,6 +126,7 @@
             this.Controls.Add(this.logoutBtn);
             this.Controls.Add(this.dgvData);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "AdminData";
             this.Text = "Form5";
             ((System.ComponentModel.ISupportInitialize)(this.dgvData)).EndInit();

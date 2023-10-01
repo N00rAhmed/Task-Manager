@@ -9,6 +9,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Npgsql;
 
 namespace TASK_APP
 {
@@ -22,14 +23,14 @@ namespace TASK_APP
         {
             InitializeComponent();
 
-            SQLiteConnection conn = new SQLiteConnection(@"data source = C:\Users\User\Desktop\TSK-APP\taskAppDB.db");
+            NpgsqlConnection conn = new NpgsqlConnection(DB.DBLocation);
             conn.Open();
 
             string query = "SELECT AdminID, UserName, Password from AdminLogin";
-            SQLiteCommand cmd = new SQLiteCommand(query, conn);
+            NpgsqlCommand cmd = new NpgsqlCommand(query, conn);
 
 
-            SQLiteDataAdapter adapter = new SQLiteDataAdapter(cmd);
+            NpgsqlDataAdapter adapter = new NpgsqlDataAdapter(cmd);
             adapter.Fill(dt);
             conn.Close();
 
@@ -85,5 +86,9 @@ namespace TASK_APP
 
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
