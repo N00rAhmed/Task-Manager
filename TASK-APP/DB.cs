@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Npgsql;
-namespace TASK_APP
+/*using Npgsql;
+*/namespace TASK_APP
 {
     public class DB
     {
