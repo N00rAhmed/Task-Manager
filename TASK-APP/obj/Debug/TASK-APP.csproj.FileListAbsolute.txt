@@ -23,7 +23,6 @@ C:\Users\noora\OneDrive\Desktop\Full-Stack C# APP\TSK-APP\TASK-APP\bin\Debug\Ent
 C:\Users\noora\OneDrive\Desktop\Full-Stack C# APP\TSK-APP\TASK-APP\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\noora\OneDrive\Desktop\Full-Stack C# APP\TSK-APP\TASK-APP\bin\Debug\Microsoft.Bcl.HashCode.dll
 C:\Users\noora\OneDrive\Desktop\Full-Stack C# APP\TSK-APP\TASK-APP\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\noora\OneDrive\Desktop\Full-Stack C# APP\TSK-APP\TASK-APP\bin\Debug\Npgsql.dll
 C:\Users\noora\OneDrive\Desktop\Full-Stack C# APP\TSK-APP\TASK-APP\bin\Debug\System.Buffers.dll
 C:\Users\noora\OneDrive\Desktop\Full-Stack C# APP\TSK-APP\TASK-APP\bin\Debug\System.Collections.Immutable.dll
 C:\Users\noora\OneDrive\Desktop\Full-Stack C# APP\TSK-APP\TASK-APP\bin\Debug\System.Data.SQLite.dll
@@ -43,7 +42,6 @@ C:\Users\noora\OneDrive\Desktop\Full-Stack C# APP\TSK-APP\TASK-APP\bin\Debug\Ent
 C:\Users\noora\OneDrive\Desktop\Full-Stack C# APP\TSK-APP\TASK-APP\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
 C:\Users\noora\OneDrive\Desktop\Full-Stack C# APP\TSK-APP\TASK-APP\bin\Debug\Microsoft.Bcl.HashCode.xml
 C:\Users\noora\OneDrive\Desktop\Full-Stack C# APP\TSK-APP\TASK-APP\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
-C:\Users\noora\OneDrive\Desktop\Full-Stack C# APP\TSK-APP\TASK-APP\bin\Debug\Npgsql.xml
 C:\Users\noora\OneDrive\Desktop\Full-Stack C# APP\TSK-APP\TASK-APP\bin\Debug\System.Buffers.xml
 C:\Users\noora\OneDrive\Desktop\Full-Stack C# APP\TSK-APP\TASK-APP\bin\Debug\System.Collections.Immutable.xml
 C:\Users\noora\OneDrive\Desktop\Full-Stack C# APP\TSK-APP\TASK-APP\bin\Debug\System.Data.SQLite.xml

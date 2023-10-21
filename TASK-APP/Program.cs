@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
-namespace TASK_APP
+using System.Reflection;
+/*using Npgsql;
+*/namespace TASK_APP
 {
     internal static class Program
     {
@@ -16,7 +17,19 @@ namespace TASK_APP
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            AppDomain.CurrentDomain.AssemblyResolve += new ResolveEventHandler(CurrentDomain_AssemblyResolve);
             Application.Run(new Options());
+        }
+
+        static Assembly CurrentDomain_AssemblyResolve(object sender, ResolveEventArgs args)
+        {
+            using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream("TASK_APP.Npgsql.dll"))
+            {
+                byte[] assemblyData = new byte[stream.Length];
+                stream.Read(assemblyData, 0, assemblyData.Length);
+                return Assembly.Load(assemblyData);
+
+            }
         }
     }
 }

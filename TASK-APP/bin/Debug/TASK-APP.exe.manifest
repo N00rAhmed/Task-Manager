@@ -102,18 +102,6 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Npgsql.dll" size="1275904">
-      <assemblyIdentity name="Npgsql" version="7.0.6.0" publicKeyToken="5D8B90D52F46FDA7" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>2sp6hjfEP6F2lxp4N/lxruj8EzOdms1sd2Kam81d3rA=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Buffers.dll" size="20856">
       <assemblyIdentity name="System.Buffers" version="4.0.3.0" publicKeyToken="CC7B13FFCD2DDD51" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -282,14 +270,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TASK-APP.exe" size="3184608">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TASK-APP.exe" size="4461024">
       <assemblyIdentity name="TASK-APP" version="2.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>2V6k7ccRH9rAiVL+f3hzsETlOMwOknk7V5XQNiXHAk8=</dsig:DigestValue>
+        <dsig:DigestValue>tVa0A2CmxCVwEaLOQILSy79uGVwG6IsTgDylBMkc/X0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
