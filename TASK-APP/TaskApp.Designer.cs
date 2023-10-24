@@ -41,6 +41,7 @@
             this.Complete = new System.Windows.Forms.Button();
             this.Incomplete = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.closeBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTasks)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -57,8 +58,8 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(932, 31);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(831, 0);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(109, 46);
             this.button1.TabIndex = 1;
@@ -69,7 +70,7 @@
             // taskInput
             // 
             this.taskInput.Location = new System.Drawing.Point(247, 127);
-            this.taskInput.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.taskInput.Margin = new System.Windows.Forms.Padding(4);
             this.taskInput.Name = "taskInput";
             this.taskInput.Size = new System.Drawing.Size(253, 22);
             this.taskInput.TabIndex = 2;
@@ -88,7 +89,7 @@
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(509, 119);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(97, 38);
             this.button2.TabIndex = 4;
@@ -100,7 +101,7 @@
             // 
             this.dgvTasks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTasks.Location = new System.Drawing.Point(115, 192);
-            this.dgvTasks.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvTasks.Margin = new System.Windows.Forms.Padding(4);
             this.dgvTasks.Name = "dgvTasks";
             this.dgvTasks.RowHeadersWidth = 51;
             this.dgvTasks.Size = new System.Drawing.Size(492, 314);
@@ -110,7 +111,7 @@
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(615, 119);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(97, 38);
             this.button3.TabIndex = 7;
@@ -121,7 +122,7 @@
             // updateBtn
             // 
             this.updateBtn.Location = new System.Drawing.Point(720, 119);
-            this.updateBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.updateBtn.Margin = new System.Windows.Forms.Padding(4);
             this.updateBtn.Name = "updateBtn";
             this.updateBtn.Size = new System.Drawing.Size(111, 41);
             this.updateBtn.TabIndex = 8;
@@ -132,7 +133,7 @@
             // IDField
             // 
             this.IDField.Location = new System.Drawing.Point(247, 160);
-            this.IDField.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.IDField.Margin = new System.Windows.Forms.Padding(4);
             this.IDField.Name = "IDField";
             this.IDField.Size = new System.Drawing.Size(253, 22);
             this.IDField.TabIndex = 9;
@@ -151,7 +152,7 @@
             // Complete
             // 
             this.Complete.Location = new System.Drawing.Point(247, 513);
-            this.Complete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Complete.Margin = new System.Windows.Forms.Padding(4);
             this.Complete.Name = "Complete";
             this.Complete.Size = new System.Drawing.Size(92, 47);
             this.Complete.TabIndex = 11;
@@ -162,7 +163,7 @@
             // Incomplete
             // 
             this.Incomplete.Location = new System.Drawing.Point(379, 513);
-            this.Incomplete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Incomplete.Margin = new System.Windows.Forms.Padding(4);
             this.Incomplete.Name = "Incomplete";
             this.Incomplete.Size = new System.Drawing.Size(92, 47);
             this.Incomplete.TabIndex = 12;
@@ -174,7 +175,7 @@
             // 
             this.pictureBox1.Image = global::TASK_APP.Properties.Resources.istockphoto_517188688_1024x1024;
             this.pictureBox1.Location = new System.Drawing.Point(-1, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1068, 560);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -182,11 +183,23 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // closeBtn
+            // 
+            this.closeBtn.Location = new System.Drawing.Point(958, 0);
+            this.closeBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.closeBtn.Name = "closeBtn";
+            this.closeBtn.Size = new System.Drawing.Size(109, 46);
+            this.closeBtn.TabIndex = 14;
+            this.closeBtn.Text = "close";
+            this.closeBtn.UseVisualStyleBackColor = true;
+            this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
+            // 
             // TaskApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.closeBtn);
             this.Controls.Add(this.Incomplete);
             this.Controls.Add(this.Complete);
             this.Controls.Add(this.ID);
@@ -200,7 +213,8 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TaskApp";
             this.Text = "Form3";
             this.Load += new System.EventHandler(this.TaskApp_Load);
@@ -226,5 +240,6 @@
         private System.Windows.Forms.Button Complete;
         private System.Windows.Forms.Button Incomplete;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button closeBtn;
     }
 }
