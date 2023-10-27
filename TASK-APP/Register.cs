@@ -26,17 +26,38 @@ namespace TASK_APP
 
         private void createAccountBtn_Click(object sender, EventArgs e)
         {
+            // Check if any of the form fields are empty
+            if (string.IsNullOrEmpty(firstname.Text) || string.IsNullOrEmpty(lastname.Text) || string.IsNullOrEmpty(DOB.Text) || string.IsNullOrEmpty(username.Text) || string.IsNullOrEmpty(password.Text))
+            {
+                // Show a popup message for incorrect details
+                string message = "Incorrect details. Please fill in all the fields.";
+                MessageBox.Show(message);
+                return; // Exit the method without further processing
+            }
+
+            // If all fields are filled, proceed with registration
             this.Hide();
-            /*            string dbquery = "INSERT INTO \"User\"(First_Name, Last_Name, DOB, username, Password)" + "VALUES ('" + firstname.Text + "', '" + lastname.Text + "', '" + DOB.Text + "', '" + username.Text + "', '" + password.Text + "')";
-            */
+
+            bool register = false;
+
+            /* string dbquery = "INSERT INTO \"User\"(First_Name, Last_Name, DOB, username, Password)" + "VALUES ('" + firstname.Text + "', '" + lastname.Text + "', '" + DOB.Text + "', '" + username.Text + "', '" + password.Text + "')"; */
             string dbquery = "INSERT INTO \"User\" (First_Name, Last_Name, DOB, username, Password) VALUES ('" + firstname.Text + "', '" + lastname.Text + "', '" + DOB.Text + "', '" + username.Text + "', '" + password.Text + "')";
-            string query = "INSERT INTO Login(username, Password, UserID) SELECT username, Password, UserID FROM \"User\"";
-
+/*            string query = "INSERT INTO Login(username, Password, UserID) SELECT username, Password, UserID FROM \"User\"";
+*/
             AmendDatabase(dbquery);
-            AmendDatabase(query);
-
+/*            AmendDatabase(query);
+*/
             Login login = new Login();
             login.Show();
+            register = true;
+
+            if (register == false)
+            {
+                string message = "Incorrect login details";
+                MessageBox.Show(message);
+                Register registerPage = new Register();
+                registerPage.Show();
+            }
         }
 
         private void AmendDatabase(string txtQuery)

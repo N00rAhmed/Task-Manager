@@ -26,7 +26,7 @@ namespace TASK_APP
             conn.Open();
 
             /*SQL query made in cockroachDB*/
-            string query = "SELECT * FROM Login";
+            string query = "SELECT * FROM \"User\"";
             /*\"User\"*/
             NpgsqlCommand cmd = new NpgsqlCommand(query, conn);
 
@@ -84,7 +84,7 @@ namespace TASK_APP
 
         private void DeleteUser_Click(object sender, EventArgs e)
         {
-            string dbquery = "DELETE FROM Login WHERE UserID = '" + UserIDField.Text + "'";
+            string dbquery = "DELETE FROM \"User\" WHERE UserID = '" + UserIDField.Text + "'";
             string query = "DELETE FROM Task WHERE UserID = '" + UserIDField.Text + "'";
             AmendDatabase(dbquery);
             AmendDatabase(query);

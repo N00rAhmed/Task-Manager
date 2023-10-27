@@ -1,5 +1,4 @@
 C:\Users\noora\OneDrive\Desktop\Full-Stack C# APP\TSK-APP\TASK-APP\obj\Debug\TASK-APP.csproj.AssemblyReference.cache
-C:\Users\noora\OneDrive\Desktop\Full-Stack C# APP\TSK-APP\TASK-APP\obj\Debug\TASK-APP.csproj.SuggestedBindingRedirects.cache
 C:\Users\noora\OneDrive\Desktop\Full-Stack C# APP\TSK-APP\TASK-APP\obj\Debug\TASK_APP.AllTasksPage.resources
 C:\Users\noora\OneDrive\Desktop\Full-Stack C# APP\TSK-APP\TASK-APP\obj\Debug\TASK_APP.Options.resources
 C:\Users\noora\OneDrive\Desktop\Full-Stack C# APP\TSK-APP\TASK-APP\obj\Debug\TASK_APP.Login.resources
@@ -39,3 +38,14 @@ C:\Users\noora\OneDrive\Desktop\Full-Stack C# APP\TSK-APP\TASK-APP\obj\Debug\TAS
 C:\Users\noora\OneDrive\Desktop\Full-Stack C# APP\TSK-APP\TASK-APP\obj\Debug\TASK-APP.csproj.CopyComplete
 C:\Users\noora\OneDrive\Desktop\Full-Stack C# APP\TSK-APP\TASK-APP\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\noora\OneDrive\Desktop\Full-Stack C# APP\TSK-APP\TASK-APP\obj\Debug\TASK-APP.csproj.Fody.CopyLocal.cache
+C:\Users\noora\OneDrive\Desktop\Full-Stack C# APP\TSK-APP\TASK-APP\bin\Debug\Microsoft.Build.xml
+C:\Users\noora\OneDrive\Desktop\Full-Stack C# APP\TSK-APP\TASK-APP\bin\Debug\Microsoft.Build.Framework.xml
+C:\Users\noora\OneDrive\Desktop\Full-Stack C# APP\TSK-APP\TASK-APP\bin\Debug\Microsoft.IO.Redist.xml
+C:\Users\noora\OneDrive\Desktop\Full-Stack C# APP\TSK-APP\TASK-APP\bin\Debug\Microsoft.NET.StringTools.xml
+C:\Users\noora\OneDrive\Desktop\Full-Stack C# APP\TSK-APP\TASK-APP\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\noora\OneDrive\Desktop\Full-Stack C# APP\TSK-APP\TASK-APP\bin\Debug\System.Reflection.Metadata.xml
+C:\Users\noora\OneDrive\Desktop\Full-Stack C# APP\TSK-APP\TASK-APP\bin\Debug\System.Reflection.MetadataLoadContext.xml
+C:\Users\noora\OneDrive\Desktop\Full-Stack C# APP\TSK-APP\TASK-APP\bin\Debug\System.Security.AccessControl.xml
+C:\Users\noora\OneDrive\Desktop\Full-Stack C# APP\TSK-APP\TASK-APP\bin\Debug\System.Security.Permissions.xml
+C:\Users\noora\OneDrive\Desktop\Full-Stack C# APP\TSK-APP\TASK-APP\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\noora\OneDrive\Desktop\Full-Stack C# APP\TSK-APP\TASK-APP\bin\Debug\System.Threading.Tasks.Dataflow.xml

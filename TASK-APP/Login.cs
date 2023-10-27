@@ -24,7 +24,11 @@ namespace TASK_APP
             NpgsqlConnection conn = new NpgsqlConnection(DB.DBLocation);
             conn.Open();
 
-            string query = "SELECT UserName, Password, UserID from Login";
+            string query = "SELECT UserName, Password, UserID from \"User\"";
+
+            /*            string query = "SELECT UserName, Password, UserID from Login";
+            */            /*            string query = "SELECT UserName, Password, UserID from User";
+                        */
             NpgsqlCommand cmd = new NpgsqlCommand(query, conn);
 
 
