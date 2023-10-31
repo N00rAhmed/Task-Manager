@@ -13,6 +13,9 @@
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
+# DB connection hide
+./TASK-APP/DB.cs
+
 # Mono auto generated files
 mono_crash.*
 
