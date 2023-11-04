@@ -6,6 +6,9 @@ This Application can create user accounts who can login and perform operations s
 <h3>Tech Stack:</h6>
 C# | Windows Forms App (.NET Framwork) | CockroachDB | Visual Studio
 
+<h3>Development Process:</h3>
+In the beginning I was using SQLITE for the database on my local system and my main focus was more on functionality than form but since this is an ongoing project I will be continuously making improvements to the user interface and also the backend. 
+
 <h3>Hosting Service:</h3>
 For the database hosting I am using a free hosting service called CockroachDB which basically performs querys and other operations similar to normal SQL syntax but in the command line. For the .NET Application, I have published it as a .exe file using a Nuget Package called Costura.Fody.
 
