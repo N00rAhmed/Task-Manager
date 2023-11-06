@@ -74,7 +74,7 @@
             // 
             // taskInput
             // 
-            this.taskInput.Location = new System.Drawing.Point(247, 127);
+            this.taskInput.Location = new System.Drawing.Point(645, 173);
             this.taskInput.Margin = new System.Windows.Forms.Padding(4);
             this.taskInput.Name = "taskInput";
             this.taskInput.Size = new System.Drawing.Size(253, 22);
@@ -84,7 +84,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(197, 127);
+            this.label2.Location = new System.Drawing.Point(599, 176);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 16);
@@ -93,10 +93,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(509, 119);
+            this.button2.Location = new System.Drawing.Point(906, 165);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(97, 38);
+            this.button2.Size = new System.Drawing.Size(91, 38);
             this.button2.TabIndex = 4;
             this.button2.Text = "Add";
             this.button2.UseVisualStyleBackColor = true;
@@ -105,17 +105,17 @@
             // dgvTasks
             // 
             this.dgvTasks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTasks.Location = new System.Drawing.Point(115, 192);
+            this.dgvTasks.Location = new System.Drawing.Point(136, 135);
             this.dgvTasks.Margin = new System.Windows.Forms.Padding(4);
             this.dgvTasks.Name = "dgvTasks";
             this.dgvTasks.RowHeadersWidth = 51;
-            this.dgvTasks.Size = new System.Drawing.Size(492, 314);
+            this.dgvTasks.Size = new System.Drawing.Size(455, 314);
             this.dgvTasks.TabIndex = 5;
             this.dgvTasks.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTasks_CellContentClick);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(615, 119);
+            this.button3.Location = new System.Drawing.Point(852, 227);
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(97, 38);
@@ -126,10 +126,10 @@
             // 
             // updateBtn
             // 
-            this.updateBtn.Location = new System.Drawing.Point(720, 119);
+            this.updateBtn.Location = new System.Drawing.Point(957, 226);
             this.updateBtn.Margin = new System.Windows.Forms.Padding(4);
             this.updateBtn.Name = "updateBtn";
-            this.updateBtn.Size = new System.Drawing.Size(111, 41);
+            this.updateBtn.Size = new System.Drawing.Size(97, 41);
             this.updateBtn.TabIndex = 8;
             this.updateBtn.Text = "Update";
             this.updateBtn.UseVisualStyleBackColor = true;
@@ -137,17 +137,17 @@
             // 
             // IDField
             // 
-            this.IDField.Location = new System.Drawing.Point(247, 160);
+            this.IDField.Location = new System.Drawing.Point(633, 235);
             this.IDField.Margin = new System.Windows.Forms.Padding(4);
             this.IDField.Name = "IDField";
-            this.IDField.Size = new System.Drawing.Size(253, 22);
+            this.IDField.Size = new System.Drawing.Size(211, 22);
             this.IDField.TabIndex = 9;
             this.IDField.TextChanged += new System.EventHandler(this.IDField_TextChanged);
             // 
             // ID
             // 
             this.ID.AutoSize = true;
-            this.ID.Location = new System.Drawing.Point(197, 164);
+            this.ID.Location = new System.Drawing.Point(603, 238);
             this.ID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ID.Name = "ID";
             this.ID.Size = new System.Drawing.Size(18, 16);
@@ -156,7 +156,7 @@
             // 
             // Complete
             // 
-            this.Complete.Location = new System.Drawing.Point(247, 513);
+            this.Complete.Location = new System.Drawing.Point(218, 483);
             this.Complete.Margin = new System.Windows.Forms.Padding(4);
             this.Complete.Name = "Complete";
             this.Complete.Size = new System.Drawing.Size(92, 47);
@@ -167,7 +167,7 @@
             // 
             // Incomplete
             // 
-            this.Incomplete.Location = new System.Drawing.Point(379, 513);
+            this.Incomplete.Location = new System.Drawing.Point(350, 483);
             this.Incomplete.Margin = new System.Windows.Forms.Padding(4);
             this.Incomplete.Name = "Incomplete";
             this.Incomplete.Size = new System.Drawing.Size(92, 47);

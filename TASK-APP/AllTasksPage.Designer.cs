@@ -48,11 +48,11 @@
             // dgvTasks
             // 
             this.dgvTasks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTasks.Location = new System.Drawing.Point(51, 68);
+            this.dgvTasks.Location = new System.Drawing.Point(128, 79);
             this.dgvTasks.Margin = new System.Windows.Forms.Padding(4);
             this.dgvTasks.Name = "dgvTasks";
             this.dgvTasks.RowHeadersWidth = 51;
-            this.dgvTasks.Size = new System.Drawing.Size(731, 383);
+            this.dgvTasks.Size = new System.Drawing.Size(604, 439);
             this.dgvTasks.TabIndex = 0;
             this.dgvTasks.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTasks_CellContentClick);
             // 
@@ -80,7 +80,7 @@
             // 
             // IDField
             // 
-            this.IDField.Location = new System.Drawing.Point(881, 274);
+            this.IDField.Location = new System.Drawing.Point(902, 254);
             this.IDField.Margin = new System.Windows.Forms.Padding(4);
             this.IDField.Name = "IDField";
             this.IDField.Size = new System.Drawing.Size(71, 22);
@@ -89,7 +89,7 @@
             // 
             // DeleteBtn
             // 
-            this.DeleteBtn.Location = new System.Drawing.Point(961, 274);
+            this.DeleteBtn.Location = new System.Drawing.Point(982, 254);
             this.DeleteBtn.Margin = new System.Windows.Forms.Padding(4);
             this.DeleteBtn.Name = "DeleteBtn";
             this.DeleteBtn.Size = new System.Drawing.Size(68, 25);
@@ -101,7 +101,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(813, 278);
+            this.label1.Location = new System.Drawing.Point(834, 258);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(54, 16);

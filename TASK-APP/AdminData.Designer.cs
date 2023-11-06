@@ -48,11 +48,11 @@
             // dgvData
             // 
             this.dgvData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvData.Location = new System.Drawing.Point(36, 79);
+            this.dgvData.Location = new System.Drawing.Point(134, 135);
             this.dgvData.Margin = new System.Windows.Forms.Padding(4);
             this.dgvData.Name = "dgvData";
             this.dgvData.RowHeadersWidth = 51;
-            this.dgvData.Size = new System.Drawing.Size(737, 375);
+            this.dgvData.Size = new System.Drawing.Size(872, 270);
             this.dgvData.TabIndex = 0;
             this.dgvData.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvData_CellContentClick);
             // 
@@ -69,10 +69,10 @@
             // 
             // TasksBtn
             // 
-            this.TasksBtn.Location = new System.Drawing.Point(871, 170);
+            this.TasksBtn.Location = new System.Drawing.Point(695, 437);
             this.TasksBtn.Margin = new System.Windows.Forms.Padding(4);
             this.TasksBtn.Name = "TasksBtn";
-            this.TasksBtn.Size = new System.Drawing.Size(140, 58);
+            this.TasksBtn.Size = new System.Drawing.Size(99, 41);
             this.TasksBtn.TabIndex = 7;
             this.TasksBtn.Text = "Tasks";
             this.TasksBtn.UseVisualStyleBackColor = true;
@@ -84,7 +84,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(-1, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1068, 553);
+            this.pictureBox1.Size = new System.Drawing.Size(1073, 555);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
@@ -92,7 +92,7 @@
             // 
             // UserIDField
             // 
-            this.UserIDField.Location = new System.Drawing.Point(855, 305);
+            this.UserIDField.Location = new System.Drawing.Point(473, 446);
             this.UserIDField.Margin = new System.Windows.Forms.Padding(4);
             this.UserIDField.Name = "UserIDField";
             this.UserIDField.Size = new System.Drawing.Size(88, 22);
@@ -102,7 +102,7 @@
             // UserID
             // 
             this.UserID.AutoSize = true;
-            this.UserID.Location = new System.Drawing.Point(793, 309);
+            this.UserID.Location = new System.Drawing.Point(416, 449);
             this.UserID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.UserID.Name = "UserID";
             this.UserID.Size = new System.Drawing.Size(49, 16);
@@ -111,7 +111,7 @@
             // 
             // DeleteUser
             // 
-            this.DeleteUser.Location = new System.Drawing.Point(952, 297);
+            this.DeleteUser.Location = new System.Drawing.Point(569, 437);
             this.DeleteUser.Margin = new System.Windows.Forms.Padding(4);
             this.DeleteUser.Name = "DeleteUser";
             this.DeleteUser.Size = new System.Drawing.Size(99, 41);
