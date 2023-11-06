@@ -43,13 +43,14 @@
             // 
             // createAccountBtn
             // 
+            this.createAccountBtn.BackColor = System.Drawing.SystemColors.Control;
             this.createAccountBtn.Location = new System.Drawing.Point(479, 123);
             this.createAccountBtn.Margin = new System.Windows.Forms.Padding(4);
             this.createAccountBtn.Name = "createAccountBtn";
             this.createAccountBtn.Size = new System.Drawing.Size(141, 44);
             this.createAccountBtn.TabIndex = 0;
-            this.createAccountBtn.Text = "create account";
-            this.createAccountBtn.UseVisualStyleBackColor = true;
+            this.createAccountBtn.Text = "Create Account";
+            this.createAccountBtn.UseVisualStyleBackColor = false;
             this.createAccountBtn.Click += new System.EventHandler(this.createAccountBtn_Click);
             // 
             // loginBtn
@@ -59,7 +60,7 @@
             this.loginBtn.Name = "loginBtn";
             this.loginBtn.Size = new System.Drawing.Size(141, 44);
             this.loginBtn.TabIndex = 1;
-            this.loginBtn.Text = "login";
+            this.loginBtn.Text = "Login";
             this.loginBtn.UseVisualStyleBackColor = true;
             this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
             // 

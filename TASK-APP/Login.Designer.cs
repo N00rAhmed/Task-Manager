@@ -78,9 +78,9 @@
             this.nameLabel.Location = new System.Drawing.Point(361, 128);
             this.nameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(67, 16);
+            this.nameLabel.Size = new System.Drawing.Size(70, 16);
             this.nameLabel.TabIndex = 4;
-            this.nameLabel.Text = "username";
+            this.nameLabel.Text = "Username";
             // 
             // passwordLabel
             // 
@@ -88,9 +88,9 @@
             this.passwordLabel.Location = new System.Drawing.Point(361, 193);
             this.passwordLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.passwordLabel.Name = "passwordLabel";
-            this.passwordLabel.Size = new System.Drawing.Size(66, 16);
+            this.passwordLabel.Size = new System.Drawing.Size(67, 16);
             this.passwordLabel.TabIndex = 5;
-            this.passwordLabel.Text = "password";
+            this.passwordLabel.Text = "Password";
             // 
             // loginBtn
             // 
@@ -100,7 +100,7 @@
             this.loginBtn.Name = "loginBtn";
             this.loginBtn.Size = new System.Drawing.Size(128, 44);
             this.loginBtn.TabIndex = 6;
-            this.loginBtn.Text = "login";
+            this.loginBtn.Text = "Login";
             this.loginBtn.UseVisualStyleBackColor = true;
             this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
             // 
