@@ -94,6 +94,7 @@
             // 
             // loginBtn
             // 
+            this.loginBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.loginBtn.Location = new System.Drawing.Point(483, 299);
             this.loginBtn.Margin = new System.Windows.Forms.Padding(4);
             this.loginBtn.Name = "loginBtn";
