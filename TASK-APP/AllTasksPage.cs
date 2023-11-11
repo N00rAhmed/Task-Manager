@@ -69,8 +69,15 @@ namespace TASK_APP
 
         private void dgvTasks_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dgvTasks.Rows[e.RowIndex];
+                IDField.Text = row.Cells[0].Value.ToString();
+            }
 
         }
+
+
 
         private void MainAdminPage_Click(object sender, EventArgs e)
         {

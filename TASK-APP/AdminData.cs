@@ -58,8 +58,16 @@ namespace TASK_APP
 
         private void dgvData_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dgvData.Rows[e.RowIndex];
+                UserIDField.Text = row.Cells[0].Value.ToString();
+           }
 
         }
+
+
+
 
         private void logoutBtn_Click(object sender, EventArgs e)
         {

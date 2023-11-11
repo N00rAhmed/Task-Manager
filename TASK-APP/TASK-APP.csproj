@@ -336,39 +336,6 @@
   <ItemGroup>
     <EmbeddedResource Include="Npgsql.dll" />
   </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="System.Threading.Tasks.Extensions.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Microsoft.Bcl.AsyncInterfaces.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Microsoft.Extensions.Logging.Abstractions.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="System.Memory.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="System.Runtime.CompilerServices.Unsafe.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="System.Runtime.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="System.Numerics.Vectors.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="System.Threading.Channels.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="System.Threading.Tasks.Parallel.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="netstandard.dll" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="System.Threading.Tasks.dll" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

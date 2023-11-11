@@ -60,6 +60,7 @@
             this.label1.Size = new System.Drawing.Size(95, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Task Manager";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // button1
             // 

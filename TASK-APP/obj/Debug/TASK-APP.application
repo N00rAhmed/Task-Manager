@@ -9,14 +9,14 @@
     <framework targetVersion="4.7.2" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="TASK-APP.exe.manifest" size="3461">
+    <dependentAssembly dependencyType="install" codebase="TASK-APP.exe.manifest" size="3460">
       <assemblyIdentity name="TASK-APP.exe" version="1.0.0.20" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>FJYE8x/RW5ArUb7TuMaDSmuNE7kFpaLc4fbqGZtYOUs=</dsig:DigestValue>
+        <dsig:DigestValue>AF1YvyMiAUOTF3NtSu+ojHtM4FCt5KOpK+5PHpvA+8U=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
