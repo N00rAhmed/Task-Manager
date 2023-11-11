@@ -56,6 +56,7 @@ namespace TASK_APP
 
             conn.Close();
             taskInput.Text = "";
+            IDField.Text = "";
         }
 
 
@@ -104,6 +105,16 @@ namespace TASK_APP
 
         private void dgvTasks_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dgvTasks.Rows[e.RowIndex];
+                taskInput.Text = row.Cells[1].Value.ToString();
+                IDField.Text = row.Cells[0].Value.ToString();
+/*                LastTxt.Text = row.Cells[2].Value.ToString();
+                BirthTxt.Text = row.Cells[3].Value.ToString();
+                RoleTxt.Text = row.Cells[4].Value.ToString();
+                PassTxt.Text = row.Cells[5].Value.ToString();
+*/            }
 
 
         }
