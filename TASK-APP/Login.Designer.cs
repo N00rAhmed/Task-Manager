@@ -58,6 +58,7 @@
             this.passwordInput.Location = new System.Drawing.Point(452, 190);
             this.passwordInput.Margin = new System.Windows.Forms.Padding(4);
             this.passwordInput.Name = "passwordInput";
+            this.passwordInput.PasswordChar = '*';
             this.passwordInput.Size = new System.Drawing.Size(200, 22);
             this.passwordInput.TabIndex = 2;
             this.passwordInput.TextChanged += new System.EventHandler(this.passwordInput_TextChanged);
@@ -107,10 +108,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::TASK_APP.Properties.Resources.wp4620025;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 1);
+            this.pictureBox1.Location = new System.Drawing.Point(-10, 1);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1071, 555);
+            this.pictureBox1.Size = new System.Drawing.Size(1081, 555);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;

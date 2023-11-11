@@ -30,7 +30,7 @@ namespace TASK_APP
         private void createAccountBtn_Click(object sender, EventArgs e)
         {
             // Check if any of the form fields are empty
-            if (string.IsNullOrEmpty(firstname.Text) || string.IsNullOrEmpty(lastname.Text) || string.IsNullOrEmpty(DOB.Text) || string.IsNullOrEmpty(username.Text) || string.IsNullOrEmpty(password.Text))
+            if (string.IsNullOrEmpty(firstname.Text) || string.IsNullOrEmpty(lastname.Text) || string.IsNullOrEmpty(dobDatePicker.Text) || string.IsNullOrEmpty(username.Text) || string.IsNullOrEmpty(password.Text))
             {
                 // Show a popup message for incorrect details
                 string message = "Incorrect details. Please fill in all the fields.";
@@ -44,7 +44,7 @@ namespace TASK_APP
             bool register = false;
 
             /* string dbquery = "INSERT INTO \"User\"(First_Name, Last_Name, DOB, username, Password)" + "VALUES ('" + firstname.Text + "', '" + lastname.Text + "', '" + DOB.Text + "', '" + username.Text + "', '" + password.Text + "')"; */
-            string dbquery = "INSERT INTO \"User\" (First_Name, Last_Name, DOB, username, Password) VALUES ('" + firstname.Text + "', '" + lastname.Text + "', '" + DOB.Text + "', '" + username.Text + "', '" + password.Text + "')";
+            string dbquery = "INSERT INTO \"User\" (First_Name, Last_Name, DOB, username, Password) VALUES ('" + firstname.Text + "', '" + lastname.Text + "', '" + dobDatePicker.Text + "', '" + username.Text + "', '" + password.Text + "')";
 /*            string query = "INSERT INTO Login(username, Password, UserID) SELECT username, Password, UserID FROM \"User\"";
 */
             AmendDatabase(dbquery);
@@ -75,7 +75,7 @@ namespace TASK_APP
             conn.Close();
             firstname.Text = "";
             lastname.Text = "";
-            DOB.Text = "";
+            dobDatePicker.Text = "";
             username.Text = "";
             password.Text = "";
 
@@ -156,6 +156,11 @@ namespace TASK_APP
                 ReleaseCapture();
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HTCAPTION, 0);
             }
+        }
+
+        private void dobDatePicker_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

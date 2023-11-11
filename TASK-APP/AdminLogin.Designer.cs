@@ -48,6 +48,7 @@
             this.AdminUser.Location = new System.Drawing.Point(464, 112);
             this.AdminUser.Margin = new System.Windows.Forms.Padding(4);
             this.AdminUser.Name = "AdminUser";
+            this.AdminUser.PasswordChar = '*';
             this.AdminUser.Size = new System.Drawing.Size(209, 22);
             this.AdminUser.TabIndex = 0;
             this.AdminUser.TextChanged += new System.EventHandler(this.AdminUser_TextChanged);
@@ -57,6 +58,7 @@
             this.AdminPassword.Location = new System.Drawing.Point(464, 196);
             this.AdminPassword.Margin = new System.Windows.Forms.Padding(4);
             this.AdminPassword.Name = "AdminPassword";
+            this.AdminPassword.PasswordChar = '*';
             this.AdminPassword.Size = new System.Drawing.Size(209, 22);
             this.AdminPassword.TabIndex = 1;
             this.AdminPassword.TextChanged += new System.EventHandler(this.AdminPassword_TextChanged);
@@ -98,7 +100,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(0, 1);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1071, 551);
+            this.pictureBox1.Size = new System.Drawing.Size(1071, 555);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;

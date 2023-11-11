@@ -36,7 +36,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.firstname = new System.Windows.Forms.TextBox();
             this.lastname = new System.Windows.Forms.TextBox();
-            this.DOB = new System.Windows.Forms.TextBox();
             this.username = new System.Windows.Forms.TextBox();
             this.password = new System.Windows.Forms.TextBox();
             this.createAccountBtn = new System.Windows.Forms.Button();
@@ -45,6 +44,7 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.btnMaximize = new System.Windows.Forms.Button();
             this.btnMinimize = new System.Windows.Forms.Button();
+            this.dobDatePicker = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.header.SuspendLayout();
             this.SuspendLayout();
@@ -116,15 +116,6 @@
             this.lastname.Size = new System.Drawing.Size(243, 22);
             this.lastname.TabIndex = 6;
             this.lastname.TextChanged += new System.EventHandler(this.lastname_TextChanged);
-            // 
-            // DOB
-            // 
-            this.DOB.Location = new System.Drawing.Point(265, 153);
-            this.DOB.Margin = new System.Windows.Forms.Padding(4);
-            this.DOB.Name = "DOB";
-            this.DOB.Size = new System.Drawing.Size(243, 22);
-            this.DOB.TabIndex = 7;
-            this.DOB.TextChanged += new System.EventHandler(this.DOB_TextChanged);
             // 
             // username
             // 
@@ -225,16 +216,24 @@
             this.btnMinimize.UseVisualStyleBackColor = false;
             this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
+            // dobDatePicker
+            // 
+            this.dobDatePicker.Location = new System.Drawing.Point(265, 153);
+            this.dobDatePicker.Name = "dobDatePicker";
+            this.dobDatePicker.Size = new System.Drawing.Size(243, 22);
+            this.dobDatePicker.TabIndex = 17;
+            this.dobDatePicker.ValueChanged += new System.EventHandler(this.dobDatePicker_ValueChanged);
+            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.dobDatePicker);
             this.Controls.Add(this.header);
             this.Controls.Add(this.createAccountBtn);
             this.Controls.Add(this.password);
             this.Controls.Add(this.username);
-            this.Controls.Add(this.DOB);
             this.Controls.Add(this.lastname);
             this.Controls.Add(this.firstname);
             this.Controls.Add(this.label5);
@@ -263,7 +262,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox firstname;
         private System.Windows.Forms.TextBox lastname;
-        private System.Windows.Forms.TextBox DOB;
         private System.Windows.Forms.TextBox username;
         private System.Windows.Forms.TextBox password;
         private System.Windows.Forms.Button createAccountBtn;
@@ -272,5 +270,6 @@
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnMaximize;
         private System.Windows.Forms.Button btnMinimize;
+        private System.Windows.Forms.DateTimePicker dobDatePicker;
     }
 }

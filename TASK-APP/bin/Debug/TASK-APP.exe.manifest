@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TASK-APP.exe" size="9115616">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TASK-APP.exe" size="9116128">
       <assemblyIdentity name="TASK-APP" version="2.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>hQkW7g38it7ppAmqSkRru2WOkh7Kv4CgCDEwLxIetqg=</dsig:DigestValue>
+        <dsig:DigestValue>NCc3bQp3hk4Gvn5IGpHqslZUKlA6eeS1yzq0FMyl+/s=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
