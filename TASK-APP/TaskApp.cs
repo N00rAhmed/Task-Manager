@@ -229,8 +229,8 @@ namespace TASK_APP
 /*                string dbquery = "INSERT INTO Task(Task_Name, UserID)" + "VALUES ('" + taskInput.Text + "','" + Login.uid + "')";
 */
 
-                string searchTerm = searhFilterBox.Text;
-                string dbquery = "SELECT * FROM Task WHERE Task_Name LIKE @searchTerm AND UserID = " + Login.uid;
+                string searchTerm = searhFilterBox.Text.ToLower();
+                string dbquery = "SELECT * FROM Task WHERE LOWER(Task_Name) LIKE @searchTerm AND UserID = " + Login.uid;
 
 
                 NpgsqlCommand cmd = new NpgsqlCommand(dbquery, conn);
