@@ -220,8 +220,18 @@ namespace TASK_APP
                 NpgsqlConnection conn = new NpgsqlConnection(DB.DBLocation);
                 conn.Open();
 
-                string searchTerm = searhFilterBox.Text.ToLower(); // Convert the search term to lowercase
-                string dbquery = "SELECT * FROM Task WHERE LOWER(Task_Name) LIKE @searchTerm";
+                /*                string searchTerm = searhFilterBox.Text.ToLower(); // Convert the search term to lowercase
+                                string dbquery = "SELECT * FROM Task WHERE LOWER(Task_Name) LIKE @searchTerm";
+                */
+                /*            string query = "SELECT TaskID, Task_Name, Task_Status from Task where UserID = " + Login.uid;
+                */
+
+/*                string dbquery = "INSERT INTO Task(Task_Name, UserID)" + "VALUES ('" + taskInput.Text + "','" + Login.uid + "')";
+*/
+
+                string searchTerm = searhFilterBox.Text;
+                string dbquery = "SELECT * FROM Task WHERE Task_Name LIKE @searchTerm AND UserID = " + Login.uid;
+
 
                 NpgsqlCommand cmd = new NpgsqlCommand(dbquery, conn);
                 cmd.Parameters.AddWithValue("@searchTerm", $"%{searchTerm}%");
