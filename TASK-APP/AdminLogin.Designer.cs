@@ -46,7 +46,7 @@
             // 
             // AdminUser
             // 
-            this.AdminUser.Location = new System.Drawing.Point(464, 112);
+            this.AdminUser.Location = new System.Drawing.Point(459, 171);
             this.AdminUser.Margin = new System.Windows.Forms.Padding(4);
             this.AdminUser.Name = "AdminUser";
             this.AdminUser.PasswordChar = '*';
@@ -56,7 +56,7 @@
             // 
             // AdminPassword
             // 
-            this.AdminPassword.Location = new System.Drawing.Point(464, 196);
+            this.AdminPassword.Location = new System.Drawing.Point(459, 255);
             this.AdminPassword.Margin = new System.Windows.Forms.Padding(4);
             this.AdminPassword.Name = "AdminPassword";
             this.AdminPassword.PasswordChar = '*';
@@ -67,7 +67,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(384, 196);
+            this.label1.Location = new System.Drawing.Point(379, 255);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 16);
@@ -77,7 +77,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(384, 116);
+            this.label2.Location = new System.Drawing.Point(379, 175);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(70, 16);
@@ -86,7 +86,7 @@
             // 
             // LoginBtn
             // 
-            this.LoginBtn.Location = new System.Drawing.Point(486, 347);
+            this.LoginBtn.Location = new System.Drawing.Point(483, 356);
             this.LoginBtn.Margin = new System.Windows.Forms.Padding(4);
             this.LoginBtn.Name = "LoginBtn";
             this.LoginBtn.Size = new System.Drawing.Size(125, 41);

@@ -53,7 +53,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(114, 109);
+            this.label1.Location = new System.Drawing.Point(347, 114);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 16);
@@ -63,7 +63,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(114, 151);
+            this.label2.Location = new System.Drawing.Point(347, 156);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 16);
@@ -73,7 +73,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(114, 196);
+            this.label3.Location = new System.Drawing.Point(347, 201);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(36, 16);
@@ -83,7 +83,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(114, 250);
+            this.label4.Location = new System.Drawing.Point(347, 255);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(67, 16);
@@ -93,7 +93,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(116, 304);
+            this.label5.Location = new System.Drawing.Point(349, 309);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(66, 16);
@@ -102,7 +102,7 @@
             // 
             // firstname
             // 
-            this.firstname.Location = new System.Drawing.Point(210, 109);
+            this.firstname.Location = new System.Drawing.Point(443, 114);
             this.firstname.Margin = new System.Windows.Forms.Padding(4);
             this.firstname.Name = "firstname";
             this.firstname.Size = new System.Drawing.Size(243, 22);
@@ -111,7 +111,7 @@
             // 
             // lastname
             // 
-            this.lastname.Location = new System.Drawing.Point(210, 151);
+            this.lastname.Location = new System.Drawing.Point(443, 156);
             this.lastname.Margin = new System.Windows.Forms.Padding(4);
             this.lastname.Name = "lastname";
             this.lastname.Size = new System.Drawing.Size(243, 22);
@@ -120,7 +120,7 @@
             // 
             // username
             // 
-            this.username.Location = new System.Drawing.Point(210, 241);
+            this.username.Location = new System.Drawing.Point(443, 246);
             this.username.Margin = new System.Windows.Forms.Padding(4);
             this.username.Name = "username";
             this.username.Size = new System.Drawing.Size(243, 22);
@@ -129,7 +129,7 @@
             // 
             // password
             // 
-            this.password.Location = new System.Drawing.Point(210, 304);
+            this.password.Location = new System.Drawing.Point(443, 309);
             this.password.Margin = new System.Windows.Forms.Padding(4);
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(243, 22);
@@ -138,10 +138,10 @@
             // 
             // createAccountBtn
             // 
-            this.createAccountBtn.Location = new System.Drawing.Point(210, 379);
+            this.createAccountBtn.Location = new System.Drawing.Point(443, 388);
             this.createAccountBtn.Margin = new System.Windows.Forms.Padding(4);
             this.createAccountBtn.Name = "createAccountBtn";
-            this.createAccountBtn.Size = new System.Drawing.Size(138, 48);
+            this.createAccountBtn.Size = new System.Drawing.Size(117, 44);
             this.createAccountBtn.TabIndex = 10;
             this.createAccountBtn.Text = "create account";
             this.createAccountBtn.UseVisualStyleBackColor = true;
@@ -219,7 +219,7 @@
             // 
             // dobDatePicker
             // 
-            this.dobDatePicker.Location = new System.Drawing.Point(210, 196);
+            this.dobDatePicker.Location = new System.Drawing.Point(443, 201);
             this.dobDatePicker.Name = "dobDatePicker";
             this.dobDatePicker.Size = new System.Drawing.Size(243, 22);
             this.dobDatePicker.TabIndex = 17;
