@@ -17,3 +17,15 @@ Fork this repo and copy the link in the your Forked repo and then open Visual St
 
 <h3>Download Task Manager</h3>
 In order to download the Task Manager you can go to my website https://p0rtf0li0-noor.netlify.app/#projects and download the project called Worklist Manager :)
+
+<h3>Disclaimer</h3>
+
+The exe file provided works on home networks but on more secure networks there is a chance that the file wont work because it is detected as malicious software or a security risk when the app attempts at accessing the database.
+
+<h3>Task Manager ERD</h3>
+
+![TASK-APP ERD Diagram](https://github.com/N00rAhmed/Task-Manager/assets/86896171/0341d834-00bf-4706-bb6e-2b9d9593abc6)
+
+<h3>Task Manager Use Case Diagram</h3>
+
+![TASK-APP Use Case Diagram](https://github.com/N00rAhmed/Task-Manager/assets/86896171/9e8e2245-aafd-4050-b1d3-adf4564d9b2c)
