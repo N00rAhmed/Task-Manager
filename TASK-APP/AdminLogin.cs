@@ -132,5 +132,13 @@ namespace TASK_APP
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HTCAPTION, 0);
             }
         }
+
+        private void backBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Options options = new Options();
+            options.Show();
+
+        }
     }
 }

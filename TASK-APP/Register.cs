@@ -162,5 +162,13 @@ namespace TASK_APP
         {
 
         }
+
+        private void backBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Options options = new Options();
+            options.Show();
+
+        }
     }
 }

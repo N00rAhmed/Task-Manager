@@ -40,13 +40,14 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.btnMaximize = new System.Windows.Forms.Button();
             this.btnMinimize = new System.Windows.Forms.Button();
+            this.backBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.header.SuspendLayout();
             this.SuspendLayout();
             // 
             // nameInput
             // 
-            this.nameInput.Location = new System.Drawing.Point(452, 128);
+            this.nameInput.Location = new System.Drawing.Point(471, 181);
             this.nameInput.Margin = new System.Windows.Forms.Padding(4);
             this.nameInput.Name = "nameInput";
             this.nameInput.Size = new System.Drawing.Size(200, 22);
@@ -55,7 +56,7 @@
             // 
             // passwordInput
             // 
-            this.passwordInput.Location = new System.Drawing.Point(452, 190);
+            this.passwordInput.Location = new System.Drawing.Point(471, 243);
             this.passwordInput.Margin = new System.Windows.Forms.Padding(4);
             this.passwordInput.Name = "passwordInput";
             this.passwordInput.PasswordChar = '*';
@@ -66,7 +67,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(521, 66);
+            this.label1.Location = new System.Drawing.Point(540, 119);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(40, 16);
@@ -76,7 +77,7 @@
             // nameLabel
             // 
             this.nameLabel.AutoSize = true;
-            this.nameLabel.Location = new System.Drawing.Point(361, 128);
+            this.nameLabel.Location = new System.Drawing.Point(380, 181);
             this.nameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.nameLabel.Name = "nameLabel";
             this.nameLabel.Size = new System.Drawing.Size(70, 16);
@@ -86,7 +87,7 @@
             // passwordLabel
             // 
             this.passwordLabel.AutoSize = true;
-            this.passwordLabel.Location = new System.Drawing.Point(361, 193);
+            this.passwordLabel.Location = new System.Drawing.Point(380, 246);
             this.passwordLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.passwordLabel.Name = "passwordLabel";
             this.passwordLabel.Size = new System.Drawing.Size(67, 16);
@@ -96,7 +97,7 @@
             // loginBtn
             // 
             this.loginBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.loginBtn.Location = new System.Drawing.Point(483, 299);
+            this.loginBtn.Location = new System.Drawing.Point(502, 352);
             this.loginBtn.Margin = new System.Windows.Forms.Padding(4);
             this.loginBtn.Name = "loginBtn";
             this.loginBtn.Size = new System.Drawing.Size(128, 44);
@@ -175,11 +176,22 @@
             this.btnMinimize.UseVisualStyleBackColor = false;
             this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click_1);
             // 
+            // backBtn
+            // 
+            this.backBtn.Location = new System.Drawing.Point(971, 60);
+            this.backBtn.Name = "backBtn";
+            this.backBtn.Size = new System.Drawing.Size(84, 30);
+            this.backBtn.TabIndex = 9;
+            this.backBtn.Text = "back";
+            this.backBtn.UseVisualStyleBackColor = true;
+            this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.backBtn);
             this.Controls.Add(this.header);
             this.Controls.Add(this.loginBtn);
             this.Controls.Add(this.passwordLabel);
@@ -212,5 +224,6 @@
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnMaximize;
         private System.Windows.Forms.Button btnMinimize;
+        private System.Windows.Forms.Button backBtn;
     }
 }

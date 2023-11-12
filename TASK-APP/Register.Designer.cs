@@ -45,6 +45,7 @@
             this.btnMaximize = new System.Windows.Forms.Button();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.dobDatePicker = new System.Windows.Forms.DateTimePicker();
+            this.backBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.header.SuspendLayout();
             this.SuspendLayout();
@@ -52,7 +53,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(169, 66);
+            this.label1.Location = new System.Drawing.Point(114, 109);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 16);
@@ -62,7 +63,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(169, 108);
+            this.label2.Location = new System.Drawing.Point(114, 151);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 16);
@@ -72,7 +73,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(169, 153);
+            this.label3.Location = new System.Drawing.Point(114, 196);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(36, 16);
@@ -82,7 +83,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(169, 207);
+            this.label4.Location = new System.Drawing.Point(114, 250);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(67, 16);
@@ -92,7 +93,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(171, 261);
+            this.label5.Location = new System.Drawing.Point(116, 304);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(66, 16);
@@ -101,7 +102,7 @@
             // 
             // firstname
             // 
-            this.firstname.Location = new System.Drawing.Point(265, 66);
+            this.firstname.Location = new System.Drawing.Point(210, 109);
             this.firstname.Margin = new System.Windows.Forms.Padding(4);
             this.firstname.Name = "firstname";
             this.firstname.Size = new System.Drawing.Size(243, 22);
@@ -110,7 +111,7 @@
             // 
             // lastname
             // 
-            this.lastname.Location = new System.Drawing.Point(265, 108);
+            this.lastname.Location = new System.Drawing.Point(210, 151);
             this.lastname.Margin = new System.Windows.Forms.Padding(4);
             this.lastname.Name = "lastname";
             this.lastname.Size = new System.Drawing.Size(243, 22);
@@ -119,7 +120,7 @@
             // 
             // username
             // 
-            this.username.Location = new System.Drawing.Point(265, 198);
+            this.username.Location = new System.Drawing.Point(210, 241);
             this.username.Margin = new System.Windows.Forms.Padding(4);
             this.username.Name = "username";
             this.username.Size = new System.Drawing.Size(243, 22);
@@ -128,7 +129,7 @@
             // 
             // password
             // 
-            this.password.Location = new System.Drawing.Point(265, 261);
+            this.password.Location = new System.Drawing.Point(210, 304);
             this.password.Margin = new System.Windows.Forms.Padding(4);
             this.password.Name = "password";
             this.password.Size = new System.Drawing.Size(243, 22);
@@ -137,10 +138,10 @@
             // 
             // createAccountBtn
             // 
-            this.createAccountBtn.Location = new System.Drawing.Point(279, 369);
+            this.createAccountBtn.Location = new System.Drawing.Point(210, 379);
             this.createAccountBtn.Margin = new System.Windows.Forms.Padding(4);
             this.createAccountBtn.Name = "createAccountBtn";
-            this.createAccountBtn.Size = new System.Drawing.Size(145, 57);
+            this.createAccountBtn.Size = new System.Drawing.Size(138, 48);
             this.createAccountBtn.TabIndex = 10;
             this.createAccountBtn.Text = "create account";
             this.createAccountBtn.UseVisualStyleBackColor = true;
@@ -218,17 +219,28 @@
             // 
             // dobDatePicker
             // 
-            this.dobDatePicker.Location = new System.Drawing.Point(265, 153);
+            this.dobDatePicker.Location = new System.Drawing.Point(210, 196);
             this.dobDatePicker.Name = "dobDatePicker";
             this.dobDatePicker.Size = new System.Drawing.Size(243, 22);
             this.dobDatePicker.TabIndex = 17;
             this.dobDatePicker.ValueChanged += new System.EventHandler(this.dobDatePicker_ValueChanged);
+            // 
+            // backBtn
+            // 
+            this.backBtn.Location = new System.Drawing.Point(971, 60);
+            this.backBtn.Name = "backBtn";
+            this.backBtn.Size = new System.Drawing.Size(84, 30);
+            this.backBtn.TabIndex = 18;
+            this.backBtn.Text = "back";
+            this.backBtn.UseVisualStyleBackColor = true;
+            this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
             // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.backBtn);
             this.Controls.Add(this.dobDatePicker);
             this.Controls.Add(this.header);
             this.Controls.Add(this.createAccountBtn);
@@ -271,5 +283,6 @@
         private System.Windows.Forms.Button btnMaximize;
         private System.Windows.Forms.Button btnMinimize;
         private System.Windows.Forms.DateTimePicker dobDatePicker;
+        private System.Windows.Forms.Button backBtn;
     }
 }
