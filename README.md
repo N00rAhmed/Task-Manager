@@ -25,7 +25,8 @@ In order to download the Task Manager you can go to my website https://p0rtf0li0
 <br />
 <br />
 
-<img src="https://github.com/N00rAhmed/Task-Manager/assets/86896171/9acab557-7226-42d0-9a6e-0a080ad671ba" width="200" height="300">
+<img src="https://github.com/N00rAhmed/Task-Manager/assets/86896171/f5feb785-765d-467b-927e-df17bb89ca39" width="800" height="400">
+
 
 <h3>Disclaimer</h3>
 
