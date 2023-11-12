@@ -25,6 +25,7 @@ namespace TASK_APP
             InitializeComponent();
             LoadData();
         }
+        List<string> items = new List<string>();
 
 
         private void LoadData()
@@ -210,5 +211,36 @@ namespace TASK_APP
         {
 
         }
+
+
+        private void searhFilterBox_TextChanged_1(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(searhFilterBox.Text))
+            {
+                NpgsqlConnection conn = new NpgsqlConnection(DB.DBLocation);
+                conn.Open();
+
+                string searchTerm = searhFilterBox.Text.ToLower(); // Convert the search term to lowercase
+                string dbquery = "SELECT * FROM Task WHERE LOWER(Task_Name) LIKE @searchTerm";
+
+                NpgsqlCommand cmd = new NpgsqlCommand(dbquery, conn);
+                cmd.Parameters.AddWithValue("@searchTerm", $"%{searchTerm}%");
+
+                DataTable dt = new DataTable();
+                NpgsqlDataAdapter adapter = new NpgsqlDataAdapter(cmd);
+                adapter.Fill(dt);
+
+                dgvTasks.DataSource = dt;
+
+                conn.Close();
+            }
+            else
+            {
+                // If search text is empty, reload the original data
+                LoadData();
+            }
+        }
+
+
     }
 }

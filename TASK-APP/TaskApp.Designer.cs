@@ -46,6 +46,7 @@
             this.btnClose = new System.Windows.Forms.Button();
             this.btnMaximize = new System.Windows.Forms.Button();
             this.btnMinimize = new System.Windows.Forms.Button();
+            this.searhFilterBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTasks)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.header.SuspendLayout();
@@ -246,11 +247,20 @@
             this.btnMinimize.UseVisualStyleBackColor = false;
             this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
+            // searhFilterBox
+            // 
+            this.searhFilterBox.Location = new System.Drawing.Point(136, 103);
+            this.searhFilterBox.Name = "searhFilterBox";
+            this.searhFilterBox.Size = new System.Drawing.Size(266, 22);
+            this.searhFilterBox.TabIndex = 18;
+            this.searhFilterBox.TextChanged += new System.EventHandler(this.searhFilterBox_TextChanged_1);
+            // 
             // TaskApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.searhFilterBox);
             this.Controls.Add(this.header);
             this.Controls.Add(this.Incomplete);
             this.Controls.Add(this.Complete);
@@ -297,5 +307,6 @@
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnMaximize;
         private System.Windows.Forms.Button btnMinimize;
+        private System.Windows.Forms.TextBox searhFilterBox;
     }
 }
