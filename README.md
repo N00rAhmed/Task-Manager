@@ -20,11 +20,14 @@ For the database hosting I am using a free hosting service called CockroachDB wh
 Fork this repo and copy the link in the your Forked repo and then open Visual Studio, click clone repository and paste the link. Also you will need to create a DB.cs file with your own connection by using cockroachDB to create the database and tables required. 
 
 <h3>Download Task Manager</h3>
-In order to download the Task Manager you can go to this link and download the exe: https://github.com/N00rAhmed/Task-Manager/releases/tag/v2.1.0 <br /> <br />
-You can also go to my website https://p0rtf0li0-noor.netlify.app/#projects and download the project from there :)
+In order to download the Task Manager you can go to this link and download the exe: https://github.com/N00rAhmed/Task-Manager/releases/ <br />
+
+<img src="https://github.com/N00rAhmed/Task-Manager/assets/86896171/f26930ef-55e1-450e-9aa5-2e4a715005f7" width="900">
 
 <br />
-<br />
+
+You can also go to my website https://p0rtf0li0-noor.netlify.app/#projects and download the project from there :)
+
 
 <img src="https://github.com/N00rAhmed/Task-Manager/assets/86896171/f5feb785-765d-467b-927e-df17bb89ca39" width="500" height="250">
 
