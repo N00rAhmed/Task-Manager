@@ -21,7 +21,7 @@ Fork this repo and copy the link in the your Forked repo and then open Visual St
 
 <h3>Download Task Manager</h3>
 In order to download the Task Manager you can go to this link and download the exe: https://github.com/N00rAhmed/Task-Manager/releases/tag/v2.1.0 <br />
-You can also go to my website https://p0rtf0li0-noor.netlify.app/#projects and download the project called Worklist Manager :)
+You can also go to my website https://p0rtf0li0-noor.netlify.app/#projects and download the project from there :)
 
 <br />
 <br />
