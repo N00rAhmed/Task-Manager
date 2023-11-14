@@ -249,7 +249,7 @@
             // 
             // searhFilterBox
             // 
-            this.searhFilterBox.ForeColor = System.Drawing.Color.Gray;
+            this.searhFilterBox.ForeColor = System.Drawing.Color.Black;
             this.searhFilterBox.Location = new System.Drawing.Point(136, 103);
             this.searhFilterBox.Name = "searhFilterBox";
             this.searhFilterBox.Size = new System.Drawing.Size(266, 22);

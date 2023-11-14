@@ -47,16 +47,32 @@ namespace TASK_APP
 
         private void AmendDatabase(string txtQuery)
         {
-            NpgsqlConnection conn = new NpgsqlConnection(DB.DBLocation);
-            conn.Open();
 
-            string query = txtQuery;
-            NpgsqlCommand cmd = new NpgsqlCommand(query, conn);
-            cmd.ExecuteNonQuery();
+            try
+            {
+                // Your code that may throw an exception goes here
+                NpgsqlConnection conn = new NpgsqlConnection(DB.DBLocation);
+                conn.Open();
 
-            conn.Close();
-            taskInput.Text = "";
-            IDField.Text = "";
+                string query = txtQuery;
+                NpgsqlCommand cmd = new NpgsqlCommand(query, conn);
+                cmd.ExecuteNonQuery();
+
+                conn.Close();
+                taskInput.Text = "";
+                IDField.Text = "";
+
+
+                // For example, let's simulate a potential exception
+/*                throw new Exception("This is a sample exception.");
+*/            }
+            catch (Exception ex)
+            {
+                // Handle the exception here
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
         }
 
 
@@ -91,6 +107,14 @@ namespace TASK_APP
 
             AmendDatabase(dbquery);
             LoadData();
+
+            /*                string message = "Incorrect login details";
+                            MessageBox.Show(message);
+                            Login f2 = new Login();
+                            f2.Show();
+            */
+
+
         }
 
 
