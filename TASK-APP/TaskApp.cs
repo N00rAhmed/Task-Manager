@@ -25,7 +25,6 @@ namespace TASK_APP
             InitializeComponent();
             LoadData();
         }
-        List<string> items = new List<string>();
 
 
         private void LoadData()
@@ -66,9 +65,6 @@ namespace TASK_APP
             this.Hide();
             Options options = new Options();
             options.Show();
-
-
-
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -81,9 +77,7 @@ namespace TASK_APP
             string dbquery = "INSERT INTO Task(Task_Name, UserID)" + "VALUES ('" + taskInput.Text + "','" + Login.uid + "')";
 
             AmendDatabase(dbquery);
-
             LoadData();
-
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -93,14 +87,11 @@ namespace TASK_APP
 
         private void button3_Click(object sender, EventArgs e)
         {
-
             string dbquery = "DELETE FROM Task WHERE TaskID = '" + IDField.Text + "'";
+
             AmendDatabase(dbquery);
             LoadData();
-
         }
-
-
 
 
 
@@ -111,20 +102,14 @@ namespace TASK_APP
                 DataGridViewRow row = this.dgvTasks.Rows[e.RowIndex];
                 taskInput.Text = row.Cells[1].Value.ToString();
                 IDField.Text = row.Cells[0].Value.ToString();
-/*                LastTxt.Text = row.Cells[2].Value.ToString();
-                BirthTxt.Text = row.Cells[3].Value.ToString();
-                RoleTxt.Text = row.Cells[4].Value.ToString();
-                PassTxt.Text = row.Cells[5].Value.ToString();
-*/            }
-
-
+            }
         }
+
 
         private void button4_Click(object sender, EventArgs e)
         {
 
             string dbquery = "Update Task set Task_Name='" + taskInput.Text + "' where TaskID = '" + IDField.Text + "'";
-
 
             AmendDatabase(dbquery);
             LoadData();
@@ -140,7 +125,6 @@ namespace TASK_APP
         {
             string dbquery = "Update Task set Task_Status='completed' where TaskID = '" + dgvTasks.SelectedRows[0].Cells[0].Value + "'";
 
-
             AmendDatabase(dbquery);
             LoadData();
         }
@@ -148,7 +132,6 @@ namespace TASK_APP
         private void Incomplete_Click(object sender, EventArgs e)
         {
             string dbquery = "Update Task set Task_Status='not completed' where TaskID = '" + dgvTasks.SelectedRows[0].Cells[0].Value + "'";
-
 
             AmendDatabase(dbquery);
             LoadData();
@@ -220,15 +203,6 @@ namespace TASK_APP
                 NpgsqlConnection conn = new NpgsqlConnection(DB.DBLocation);
                 conn.Open();
 
-                /*                string searchTerm = searhFilterBox.Text.ToLower(); // Convert the search term to lowercase
-                                string dbquery = "SELECT * FROM Task WHERE LOWER(Task_Name) LIKE @searchTerm";
-                */
-                /*            string query = "SELECT TaskID, Task_Name, Task_Status from Task where UserID = " + Login.uid;
-                */
-
-/*                string dbquery = "INSERT INTO Task(Task_Name, UserID)" + "VALUES ('" + taskInput.Text + "','" + Login.uid + "')";
-*/
-
                 string searchTerm = searhFilterBox.Text.ToLower();
                 string dbquery = "SELECT * FROM Task WHERE LOWER(Task_Name) LIKE @searchTerm AND UserID = " + Login.uid;
 
@@ -246,7 +220,6 @@ namespace TASK_APP
             }
             else
             {
-                // If search text is empty, reload the original data
                 LoadData();
             }
         }
