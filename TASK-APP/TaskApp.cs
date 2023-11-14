@@ -222,8 +222,8 @@ namespace TASK_APP
             {
                 LoadData();
             }
-        }
 
+        }
 
     }
 }
