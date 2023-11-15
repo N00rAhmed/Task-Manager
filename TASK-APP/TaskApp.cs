@@ -61,11 +61,7 @@ namespace TASK_APP
                 conn.Close();
                 taskInput.Text = "";
                 IDField.Text = "";
-
-
-                // For example, let's simulate a potential exception
-/*                throw new Exception("This is a sample exception.");
-*/            }
+     }
             catch (Exception ex)
             {
                 // Handle the exception here
@@ -107,14 +103,6 @@ namespace TASK_APP
 
             AmendDatabase(dbquery);
             LoadData();
-
-            /*                string message = "Incorrect login details";
-                            MessageBox.Show(message);
-                            Login f2 = new Login();
-                            f2.Show();
-            */
-
-
         }
 
 
