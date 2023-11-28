@@ -3,6 +3,13 @@
 ## Table of Contents
 
 - [Introduction](#introduction)
+- [Tech Stack](#tech-stack)
+- [Development Process](#development-process)
+- [Task Manager ERD + Use Case Diagram](#task-manager-erd--use-case-diagram)
+- [Hosting Service](#hosting-service)
+- [Run Task Manager on Local System](#run-task-manager-on-local-system)
+- [Download Task Manager](#download-task-manager)
+- [Disclaimer](#disclaimer)
 
 
 <h3>Introduction</h3>
