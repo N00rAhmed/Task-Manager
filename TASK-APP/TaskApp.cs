@@ -24,6 +24,7 @@ namespace TASK_APP
         {
             InitializeComponent();
             LoadData();
+            dgvTasks.CellClick += dgvTasks_CellContentClick;
         }
 
 
@@ -105,6 +106,7 @@ namespace TASK_APP
             LoadData();
         }
 
+        private string selectedTaskID = ""; // Define a variable to store the selected task ID
 
 
         private void dgvTasks_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -115,6 +117,16 @@ namespace TASK_APP
                 taskInput.Text = row.Cells[1].Value.ToString();
                 IDField.Text = row.Cells[0].Value.ToString();
             }
+
+            if (e.RowIndex >= 0 && e.ColumnIndex == dgvTasks.Columns["Task_Status"].Index)
+            {
+                DataGridViewRow row = dgvTasks.Rows[e.RowIndex];
+/*                taskInput.Text = row.Cells[1].Value.ToString();
+                IDField.Text = row.Cells[0].Value.ToString();
+*/
+                selectedTaskID = row.Cells["TaskID"].Value.ToString();
+            }
+
         }
 
 
@@ -135,18 +147,24 @@ namespace TASK_APP
 
         private void Complete_Click(object sender, EventArgs e)
         {
-            string dbquery = "Update Task set Task_Status='completed' where TaskID = '" + dgvTasks.SelectedRows[0].Cells[0].Value + "'";
-
-            AmendDatabase(dbquery);
-            LoadData();
+            if (!string.IsNullOrEmpty(selectedTaskID))
+            {
+                string dbquery = "Update Task set Task_Status='completed' where TaskID = '" + selectedTaskID + "'";
+                AmendDatabase(dbquery);
+                LoadData();
+                selectedTaskID = ""; // Reset the selected task ID
+            }
         }
 
         private void Incomplete_Click(object sender, EventArgs e)
         {
-            string dbquery = "Update Task set Task_Status='not completed' where TaskID = '" + dgvTasks.SelectedRows[0].Cells[0].Value + "'";
-
-            AmendDatabase(dbquery);
-            LoadData();
+            if (!string.IsNullOrEmpty(selectedTaskID))
+            {
+                string dbquery = "Update Task set Task_Status='not completed' where TaskID = '" + selectedTaskID + "'";
+                AmendDatabase(dbquery);
+                LoadData();
+                selectedTaskID = ""; // Reset the selected task ID
+            }
         }
 
         private void TaskApp_Load(object sender, EventArgs e)
