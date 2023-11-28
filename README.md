@@ -1,6 +1,6 @@
-<h2>Task Manager Documentation</h2>
+<h1>Task Manager Documentation</h2>
 
-## Table of Contents
+<h2>Table of Contents</h2>
 
 - [Introduction](#introduction)
 - [Tech Stack](#tech-stack)
@@ -11,6 +11,7 @@
 - [Download Task Manager](#download-task-manager)
 - [Disclaimer](#disclaimer)
 
+<hr />
 
 <h3>Introduction</h3>
 This Task Manager Application can create user accounts who can login and perform operations such as adding, deleting, updating data, marking tasks completed or incompleted and searching through tasks. There is also an admin who can view every users account information and also view the tasks created. Currently this is an ongoing project and commits/pushes are made regularly.
