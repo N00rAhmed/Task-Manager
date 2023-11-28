@@ -47,6 +47,8 @@
             this.btnMaximize = new System.Windows.Forms.Button();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.searhFilterBox = new System.Windows.Forms.TextBox();
+            this.counter_Title = new System.Windows.Forms.Label();
+            this.counter = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTasks)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.header.SuspendLayout();
@@ -55,6 +57,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(496, 62);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
@@ -256,11 +259,33 @@
             this.searhFilterBox.TabIndex = 18;
             this.searhFilterBox.TextChanged += new System.EventHandler(this.searhFilterBox_TextChanged_1);
             // 
+            // counter_Title
+            // 
+            this.counter_Title.AutoSize = true;
+            this.counter_Title.Location = new System.Drawing.Point(700, 368);
+            this.counter_Title.Name = "counter_Title";
+            this.counter_Title.Size = new System.Drawing.Size(87, 16);
+            this.counter_Title.TabIndex = 19;
+            this.counter_Title.Text = "Task Counter";
+            this.counter_Title.Click += new System.EventHandler(this.counter_Title_Click);
+            // 
+            // counter
+            // 
+            this.counter.AutoSize = true;
+            this.counter.Location = new System.Drawing.Point(793, 368);
+            this.counter.Name = "counter";
+            this.counter.Size = new System.Drawing.Size(14, 16);
+            this.counter.TabIndex = 20;
+            this.counter.Text = "0";
+            this.counter.Click += new System.EventHandler(this.counter_Click);
+            // 
             // TaskApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.counter);
+            this.Controls.Add(this.counter_Title);
             this.Controls.Add(this.searhFilterBox);
             this.Controls.Add(this.header);
             this.Controls.Add(this.Incomplete);
@@ -309,5 +334,7 @@
         private System.Windows.Forms.Button btnMaximize;
         private System.Windows.Forms.Button btnMinimize;
         private System.Windows.Forms.TextBox searhFilterBox;
+        private System.Windows.Forms.Label counter_Title;
+        private System.Windows.Forms.Label counter;
     }
 }

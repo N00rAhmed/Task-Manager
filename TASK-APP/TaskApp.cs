@@ -43,6 +43,7 @@ namespace TASK_APP
             dgvTasks.DataSource = dt;
 
             conn.Close();
+            UpdateTaskCountLabel(); // Update the task count label after loading data
 
         }
 
@@ -169,6 +170,15 @@ namespace TASK_APP
 
         private void TaskApp_Load(object sender, EventArgs e)
         {
+            label1.Parent = pictureBox1;
+            label1.BackColor = Color.Transparent;
+
+/*            counter_Title.Parent = pictureBox1;
+            counter_Title.BackColor = Color.Transparent;
+
+            counter.Parent = pictureBox1;
+            counter.BackColor = Color.Transparent;
+*/
 
         }
 
@@ -254,6 +264,36 @@ namespace TASK_APP
             }
 
         }
+        private void UpdateTaskCountLabel()
+        {
+            int noOfTasks = CountValidTaskIDs();
+            counter.Text = noOfTasks.ToString();
+        }
 
+        private int CountValidTaskIDs()
+        {
+            int count = 0;
+
+            foreach (DataGridViewRow row in dgvTasks.Rows)
+            {
+                if (row.Cells["TaskID"].Value != null && !string.IsNullOrWhiteSpace(row.Cells["TaskID"].Value.ToString()))
+                {
+                    count++;
+                }
+            }
+
+            return count;
+        }
+
+
+        private void counter_Click(object sender, EventArgs e)
+        {
+            UpdateTaskCountLabel();
+        }
+
+        private void counter_Title_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
