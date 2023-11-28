@@ -31,9 +31,18 @@ You can also go to my website https://p0rtf0li0-noor.netlify.app/#projects and d
 
 <img src="https://github.com/N00rAhmed/Task-Manager/assets/86896171/f5feb785-765d-467b-927e-df17bb89ca39" width="500" height="250">
 
+<br />
+<br />
+
+When opening the exe file you will get a popup similar to the one below. In order to bypass this you click more info and then run anyway which will the application.
+
+<img src="https://github.com/N00rAhmed/Task-Manager/assets/86896171/d6c10d09-e89b-48e5-b748-11076175288d" width="500" height="400">
+
+<img src="https://github.com/N00rAhmed/Task-Manager/assets/86896171/d80f91c9-c6ab-40da-993c-b6da7e9adf09" width="500" height="400">
+
 
 <h3>Disclaimer</h3>
 
-The exe file provided works on home networks but on more secure networks there is a chance that the file wont work because it is detected as malicious software or a security risk when the app attempts at accessing the database.
+The exe file provided works on home networks but on more secure networks there is a chance that the file wont work because it is detected as malicious software or a security risk when the app attempts at accessing the database. Also if you have installed any anti virus software there is a chance that it will also stop the application from running and being downloaded.
 
 
