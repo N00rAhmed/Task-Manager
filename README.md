@@ -17,17 +17,17 @@
 This Task Manager Application can create user accounts who can login and perform operations such as adding, deleting, updating data, marking tasks completed or incompleted and searching through tasks. There is also an admin who can view every users account information and also view the tasks created. Currently this is an ongoing project and commits/pushes are made regularly.
 
 <!-- <br/> -->
-<h3>Tech Stack:</h6>
+<h3>Tech Stack</h6>
 C# | Windows Forms App (.NET Framwork) | CockroachDB | Visual Studio
 
-<h3>Development Process:</h3>
+<h3>Development Process</h3>
 In the beginning when developing locally I was using SQLITE for the database and my main focus was more on functionality than form but since this is an ongoing project I will be continuously making improvements to the user interface and also the backend.
 
 <h3>Task Manager ERD + Use Case Diagram</h3>
 
 <img src="https://github.com/N00rAhmed/Task-Manager/assets/86896171/0341d834-00bf-4706-bb6e-2b9d9593abc6" width="500" height="400"> <img src="https://github.com/N00rAhmed/Task-Manager/assets/86896171/9e8e2245-aafd-4050-b1d3-adf4564d9b2c" width="500" height="400">
 
-<h3>Hosting Services:</h3>
+<h3>Hosting Services</h3>
 For the database hosting I am using a free hosting service called CockroachDB which basically performs querys and creates tables similar to normal SQL syntax but in the command line. For the .NET Application, I have published it as a .exe file using a Nuget Package called Costura.Fody.
 
 <h3>Run Task Manager on Local System</h3>
