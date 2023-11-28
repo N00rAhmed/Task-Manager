@@ -6,7 +6,7 @@
 - [Tech Stack](#tech-stack)
 - [Development Process](#development-process)
 - [Task Manager ERD + Use Case Diagram](#task-manager-erd--use-case-diagram)
-- [Hosting Service](#hosting-service)
+- [Hosting Services](#hosting-services)
 - [Run Task Manager on Local System](#run-task-manager-on-local-system)
 - [Download Task Manager](#download-task-manager)
 - [Disclaimer](#disclaimer)
@@ -27,7 +27,7 @@ In the beginning when developing locally I was using SQLITE for the database and
 
 <img src="https://github.com/N00rAhmed/Task-Manager/assets/86896171/0341d834-00bf-4706-bb6e-2b9d9593abc6" width="500" height="400"> <img src="https://github.com/N00rAhmed/Task-Manager/assets/86896171/9e8e2245-aafd-4050-b1d3-adf4564d9b2c" width="500" height="400">
 
-<h3>Hosting Service:</h3>
+<h3>Hosting Services:</h3>
 For the database hosting I am using a free hosting service called CockroachDB which basically performs querys and creates tables similar to normal SQL syntax but in the command line. For the .NET Application, I have published it as a .exe file using a Nuget Package called Costura.Fody.
 
 <h3>Run Task Manager on Local System</h3>
