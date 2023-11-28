@@ -36,9 +36,9 @@ You can also go to my website https://p0rtf0li0-noor.netlify.app/#projects and d
 
 When opening the exe file you will get a popup similar to the one below. In order to bypass this you click more info and then run anyway which will the application.
 
-<img src="https://github.com/N00rAhmed/Task-Manager/assets/86896171/d6c10d09-e89b-48e5-b748-11076175288d" width="400" height="400">
+<img src="https://github.com/N00rAhmed/Task-Manager/assets/86896171/d6c10d09-e89b-48e5-b748-11076175288d" width="450" height="400">
 
-<img src="https://github.com/N00rAhmed/Task-Manager/assets/86896171/d80f91c9-c6ab-40da-993c-b6da7e9adf09" width="400" height="400">
+<img src="https://github.com/N00rAhmed/Task-Manager/assets/86896171/d80f91c9-c6ab-40da-993c-b6da7e9adf09" width="450" height="400">
 
 
 <h3>Disclaimer</h3>
