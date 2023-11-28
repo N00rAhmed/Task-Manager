@@ -31,7 +31,7 @@ In the beginning when developing locally I was using SQLITE for the database and
 For the database hosting I am using a free hosting service called CockroachDB which basically performs querys and creates tables similar to normal SQL syntax but in the command line. For the .NET Application, I have published it as a .exe file using a Nuget Package called Costura.Fody.
 
 <h3>Run Task Manager on Local System</h3>
-Fork this repo and copy the link in the your Forked repo and then open Visual Studio, click clone repository and paste the link. Also you will need to create a DB.cs file with your own connection by using cockroachDB to create the database and tables required. 
+Fork this repo and copy the link in the your Forked repo and then open Visual Studio, click clone repository and paste the link. Also you will need to create a DB.cs file with your own connection string by using cockroachDB to create the database and tables required. 
 
 <h3>Download Task Manager</h3>
 In order to download the Task Manager you can go to this link and download the exe: https://github.com/N00rAhmed/Task-Manager/releases/ <br />
