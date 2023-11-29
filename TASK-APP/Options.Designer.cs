@@ -44,7 +44,7 @@
             // createAccountBtn
             // 
             this.createAccountBtn.BackColor = System.Drawing.SystemColors.Control;
-            this.createAccountBtn.Location = new System.Drawing.Point(479, 123);
+            this.createAccountBtn.Location = new System.Drawing.Point(475, 134);
             this.createAccountBtn.Margin = new System.Windows.Forms.Padding(4);
             this.createAccountBtn.Name = "createAccountBtn";
             this.createAccountBtn.Size = new System.Drawing.Size(141, 44);
@@ -55,7 +55,7 @@
             // 
             // loginBtn
             // 
-            this.loginBtn.Location = new System.Drawing.Point(479, 204);
+            this.loginBtn.Location = new System.Drawing.Point(475, 215);
             this.loginBtn.Margin = new System.Windows.Forms.Padding(4);
             this.loginBtn.Name = "loginBtn";
             this.loginBtn.Size = new System.Drawing.Size(141, 44);
@@ -66,7 +66,7 @@
             // 
             // AdminBtn
             // 
-            this.AdminBtn.Location = new System.Drawing.Point(479, 294);
+            this.AdminBtn.Location = new System.Drawing.Point(475, 305);
             this.AdminBtn.Margin = new System.Windows.Forms.Padding(4);
             this.AdminBtn.Name = "AdminBtn";
             this.AdminBtn.Size = new System.Drawing.Size(141, 44);

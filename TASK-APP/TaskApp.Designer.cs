@@ -60,10 +60,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(496, 62);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(489, 49);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 16);
+            this.label1.Size = new System.Drawing.Size(167, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Task Manager";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -112,7 +113,7 @@
             // dgvTasks
             // 
             this.dgvTasks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTasks.Location = new System.Drawing.Point(136, 135);
+            this.dgvTasks.Location = new System.Drawing.Point(136, 149);
             this.dgvTasks.Margin = new System.Windows.Forms.Padding(4);
             this.dgvTasks.Name = "dgvTasks";
             this.dgvTasks.RowHeadersWidth = 51;
@@ -255,7 +256,7 @@
             // searhFilterBox
             // 
             this.searhFilterBox.ForeColor = System.Drawing.Color.Black;
-            this.searhFilterBox.Location = new System.Drawing.Point(136, 103);
+            this.searhFilterBox.Location = new System.Drawing.Point(136, 117);
             this.searhFilterBox.Name = "searhFilterBox";
             this.searhFilterBox.Size = new System.Drawing.Size(455, 22);
             this.searhFilterBox.TabIndex = 18;
