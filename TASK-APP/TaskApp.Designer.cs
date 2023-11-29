@@ -49,6 +49,8 @@
             this.searhFilterBox = new System.Windows.Forms.TextBox();
             this.counter_Title = new System.Windows.Forms.Label();
             this.counter = new System.Windows.Forms.Label();
+            this.greetingLabel = new System.Windows.Forms.Label();
+            this.usernameLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTasks)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.header.SuspendLayout();
@@ -279,11 +281,33 @@
             this.counter.Text = "0";
             this.counter.Click += new System.EventHandler(this.counter_Click);
             // 
+            // greetingLabel
+            // 
+            this.greetingLabel.AutoSize = true;
+            this.greetingLabel.Location = new System.Drawing.Point(740, 76);
+            this.greetingLabel.Name = "greetingLabel";
+            this.greetingLabel.Size = new System.Drawing.Size(39, 16);
+            this.greetingLabel.TabIndex = 21;
+            this.greetingLabel.Text = "Hello";
+            this.greetingLabel.Click += new System.EventHandler(this.greetingLabel_Click);
+            // 
+            // usernameLabel
+            // 
+            this.usernameLabel.AutoSize = true;
+            this.usernameLabel.Location = new System.Drawing.Point(785, 76);
+            this.usernameLabel.Name = "usernameLabel";
+            this.usernameLabel.Size = new System.Drawing.Size(67, 16);
+            this.usernameLabel.TabIndex = 22;
+            this.usernameLabel.Text = "username";
+            this.usernameLabel.Click += new System.EventHandler(this.usernameLabel_Click);
+            // 
             // TaskApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.usernameLabel);
+            this.Controls.Add(this.greetingLabel);
             this.Controls.Add(this.counter);
             this.Controls.Add(this.counter_Title);
             this.Controls.Add(this.searhFilterBox);
@@ -336,5 +360,7 @@
         private System.Windows.Forms.TextBox searhFilterBox;
         private System.Windows.Forms.Label counter_Title;
         private System.Windows.Forms.Label counter;
+        private System.Windows.Forms.Label greetingLabel;
+        private System.Windows.Forms.Label usernameLabel;
     }
 }

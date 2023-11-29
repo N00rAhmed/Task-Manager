@@ -44,6 +44,7 @@ namespace TASK_APP
 
             conn.Close();
             UpdateTaskCountLabel(); // Update the task count label after loading data
+            selectUsername();
 
         }
 
@@ -292,6 +293,40 @@ namespace TASK_APP
         }
 
         private void counter_Title_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void selectUsername()
+        {
+/*            string query = "SELECT username from  \"User\" where UserID = " + Login.uid;
+*/
+
+            NpgsqlConnection conn = new NpgsqlConnection(DB.DBLocation);
+            conn.Open();
+
+            string query = "SELECT username FROM \"User\" WHERE UserID = @UserID";
+            NpgsqlCommand cmd = new NpgsqlCommand(query, conn);
+            cmd.Parameters.AddWithValue("@UserID", Convert.ToInt64(Login.uid)); // Convert Login.uid to Int64 (long)
+
+            NpgsqlDataReader reader = cmd.ExecuteReader();
+            if (reader.Read())
+            {
+                string username = reader["username"].ToString();
+                usernameLabel.Text = username;
+            }
+
+            conn.Close();
+
+        }
+
+
+        private void usernameLabel_Click(object sender, EventArgs e)
+        {
+            selectUsername();
+        }
+
+        private void greetingLabel_Click(object sender, EventArgs e)
         {
 
         }
