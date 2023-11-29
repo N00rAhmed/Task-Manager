@@ -81,7 +81,7 @@
             // 
             // taskInput
             // 
-            this.taskInput.Location = new System.Drawing.Point(645, 173);
+            this.taskInput.Location = new System.Drawing.Point(664, 206);
             this.taskInput.Margin = new System.Windows.Forms.Padding(4);
             this.taskInput.Name = "taskInput";
             this.taskInput.Size = new System.Drawing.Size(253, 22);
@@ -91,7 +91,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(599, 176);
+            this.label2.Location = new System.Drawing.Point(618, 209);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 16);
@@ -100,7 +100,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(906, 165);
+            this.button2.Location = new System.Drawing.Point(925, 198);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(91, 38);
@@ -122,10 +122,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(852, 227);
+            this.button3.Location = new System.Drawing.Point(662, 314);
             this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(97, 38);
+            this.button3.Size = new System.Drawing.Size(88, 38);
             this.button3.TabIndex = 7;
             this.button3.Text = "Delete";
             this.button3.UseVisualStyleBackColor = true;
@@ -133,10 +133,10 @@
             // 
             // updateBtn
             // 
-            this.updateBtn.Location = new System.Drawing.Point(957, 226);
+            this.updateBtn.Location = new System.Drawing.Point(771, 313);
             this.updateBtn.Margin = new System.Windows.Forms.Padding(4);
             this.updateBtn.Name = "updateBtn";
-            this.updateBtn.Size = new System.Drawing.Size(97, 41);
+            this.updateBtn.Size = new System.Drawing.Size(88, 41);
             this.updateBtn.TabIndex = 8;
             this.updateBtn.Text = "Update";
             this.updateBtn.UseVisualStyleBackColor = true;
@@ -144,7 +144,7 @@
             // 
             // IDField
             // 
-            this.IDField.Location = new System.Drawing.Point(633, 235);
+            this.IDField.Location = new System.Drawing.Point(662, 263);
             this.IDField.Margin = new System.Windows.Forms.Padding(4);
             this.IDField.Name = "IDField";
             this.IDField.Size = new System.Drawing.Size(211, 22);
@@ -154,7 +154,7 @@
             // ID
             // 
             this.ID.AutoSize = true;
-            this.ID.Location = new System.Drawing.Point(603, 238);
+            this.ID.Location = new System.Drawing.Point(636, 263);
             this.ID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ID.Name = "ID";
             this.ID.Size = new System.Drawing.Size(18, 16);
@@ -264,7 +264,7 @@
             // counter_Title
             // 
             this.counter_Title.AutoSize = true;
-            this.counter_Title.Location = new System.Drawing.Point(700, 368);
+            this.counter_Title.Location = new System.Drawing.Point(618, 161);
             this.counter_Title.Name = "counter_Title";
             this.counter_Title.Size = new System.Drawing.Size(87, 16);
             this.counter_Title.TabIndex = 19;
@@ -274,7 +274,7 @@
             // counter
             // 
             this.counter.AutoSize = true;
-            this.counter.Location = new System.Drawing.Point(793, 368);
+            this.counter.Location = new System.Drawing.Point(711, 161);
             this.counter.Name = "counter";
             this.counter.Size = new System.Drawing.Size(14, 16);
             this.counter.TabIndex = 20;
@@ -284,7 +284,7 @@
             // greetingLabel
             // 
             this.greetingLabel.AutoSize = true;
-            this.greetingLabel.Location = new System.Drawing.Point(740, 76);
+            this.greetingLabel.Location = new System.Drawing.Point(857, 55);
             this.greetingLabel.Name = "greetingLabel";
             this.greetingLabel.Size = new System.Drawing.Size(39, 16);
             this.greetingLabel.TabIndex = 21;
@@ -294,7 +294,7 @@
             // usernameLabel
             // 
             this.usernameLabel.AutoSize = true;
-            this.usernameLabel.Location = new System.Drawing.Point(785, 76);
+            this.usernameLabel.Location = new System.Drawing.Point(902, 55);
             this.usernameLabel.Name = "usernameLabel";
             this.usernameLabel.Size = new System.Drawing.Size(67, 16);
             this.usernameLabel.TabIndex = 22;

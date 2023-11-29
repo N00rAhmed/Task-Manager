@@ -14,6 +14,7 @@ using System.Data.Entity.Core.Common.CommandTrees.ExpressionBuilder;
 using Npgsql;
 using System.Runtime.InteropServices;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 
 namespace TASK_APP
@@ -89,6 +90,13 @@ namespace TASK_APP
 
         private void button2_Click(object sender, EventArgs e)
         {
+
+            if (string.IsNullOrWhiteSpace(taskInput.Text))
+            {
+                MessageBox.Show("Text field is empty", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return; // Stop further execution
+            }
+
             string dbquery = "INSERT INTO Task(Task_Name, UserID)" + "VALUES ('" + taskInput.Text + "','" + Login.uid + "')";
 
             AmendDatabase(dbquery);
