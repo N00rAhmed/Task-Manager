@@ -56,10 +56,7 @@ When opening the exe file you will get a popup similar to the one below. In orde
 
 <h3>Demo Video</h3>
 
-
-https://github.com/N00rAhmed/Task-Manager/assets/86896171/a6c6cefe-3068-464b-97b3-1b8cbaba29b0
-
-
+https://github.com/N00rAhmed/Task-Manager/assets/86896171/767684b7-7ab9-4c65-a221-488da204d09c
 
 <h3>Disclaimer</h3>
 
