@@ -57,6 +57,7 @@ When opening the exe file you will get a popup similar to the one below. In orde
 <h3>Demo Video</h3>
 
 https://youtu.be/5uJcWNvSF6E?si=X5td5zuhowYdHFrZ
+[![Video]](https://youtu.be/5uJcWNvSF6E?si=X5td5zuhowYdHFrZ)
 
 <h3>Disclaimer</h3>
 
