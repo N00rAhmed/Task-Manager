@@ -22,7 +22,7 @@ This Task Manager Application can create user accounts who can login and perform
 C# | Windows Forms App (.NET Framwork) | CockroachDB | Visual Studio
 
 <h3>Development Process</h3>
-In the beginning when developing locally I was using SQLITE for the database and my main focus was more on functionality than form but since this is an ongoing project I will be continuously making improvements to the user interface and also the backend.
+In the beginning when developing locally I was using SQLITE for the database and my main focus was more on functionality, since this is an ongoing project I will be continuously making improvements to the user interface and also the backend.
 
 <h3>Task Manager ERD<!-- + Use Case Diagram --></h3>
 
