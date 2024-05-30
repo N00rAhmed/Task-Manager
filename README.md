@@ -25,8 +25,9 @@ C# | Windows Forms App (.NET Framwork) | CockroachDB | Visual Studio
 In the beginning when developing locally I was using SQLITE for the database and my main focus was more on functionality, since this is an ongoing project I will be continuously making improvements to the user interface and also the backend.
 
 <h3>Task Manager ERD<!-- + Use Case Diagram --></h3>
+<img src="https://github.com/N00rAhmed/Task-Manager/assets/86896171/0ba11e02-38b4-46d0-8c32-1c573ff82b3b" width="600" height="400">
 
-<img src="https://github.com/N00rAhmed/Task-Manager/assets/86896171/0341d834-00bf-4706-bb6e-2b9d9593abc6" width="500" height="400"> <!-- <img src="https://github.com/N00rAhmed/Task-Manager/assets/86896171/9e8e2245-aafd-4050-b1d3-adf4564d9b2c" width="500" height="680"> -->
+<!-- <img src="https://github.com/N00rAhmed/Task-Manager/assets/86896171/0341d834-00bf-4706-bb6e-2b9d9593abc6" width="500" height="400"> --> <!-- <img src="https://github.com/N00rAhmed/Task-Manager/assets/86896171/9e8e2245-aafd-4050-b1d3-adf4564d9b2c" width="500" height="680"> -->
 <h3>Hosting Services</h3>
 For the database hosting I am using a free hosting service called CockroachDB which basically performs querys and creates tables similar to normal SQL syntax but in the command line. For the .NET Application, I have published it as a .exe file using a Nuget Package called Costura.Fody.
 
