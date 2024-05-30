@@ -32,7 +32,7 @@ In the beginning when developing locally I was using SQLITE for the database and
 
 <!-- <img src="https://github.com/N00rAhmed/Task-Manager/assets/86896171/0341d834-00bf-4706-bb6e-2b9d9593abc6" width="500" height="400"> --> <!-- <img src="https://github.com/N00rAhmed/Task-Manager/assets/86896171/9e8e2245-aafd-4050-b1d3-adf4564d9b2c" width="500" height="680"> -->
 <h3>Hosting Services</h3>
-For the database hosting I am using a free hosting service called CockroachDB which basically performs querys and creates tables similar to normal SQL syntax but in the command line. For the .NET Application, I have published it as a .exe file using a Nuget Package called Costura.Fody.
+For the database hosting I am using a free hosting service called CockroachDB which basically performs querys and creates tables similar to normal SQL syntax but in the command line. For the .NET Application, I have published it as a .exe file using a Nuget Package called Costura.Fody. For more information on how to deploy a windows forms application you can watch this https://youtu.be/YQuBBqudpe0?si=s8UQXi8uG6drifUc
 
 <h3>Run Task Manager on Local System</h3>
 Fork this repo and copy the link in the your Forked repo and then open Visual Studio, click clone repository and paste the link. Also you will need to create a DB.cs file with your own connection string by using cockroachDB to create the database and tables required. 
