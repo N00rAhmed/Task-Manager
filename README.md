@@ -72,4 +72,5 @@ The exe file provided works on home networks but on more secure networks there i
 <h3>Publications</h3>
 
 https://noor-ahmed.hashnode.dev/embed-dlls-in-executable
+<br />
 https://noor-ahmed.hashnode.dev/stop-having-multiple-connection-strings-in-csharp
