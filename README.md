@@ -11,6 +11,7 @@
 - [Download Task Manager](#download-task-manager)
 - [Demo Video](#demo-video)
 - [Disclaimer](#disclaimer)
+- [Publications](#publications)
 
 <hr />
 
@@ -68,3 +69,7 @@ https://github.com/N00rAhmed/Task-Manager/assets/86896171/0193cee5-a1f4-4f1b-906
 The exe file provided works on home networks but on more secure networks there is a chance that the file wont work because it is detected as malicious software or a security risk when the app attempts at accessing the database. Also if you have installed any anti virus software there is a chance that it will also stop the application from running and being downloaded.
 
 
+<h3>Publications</h3>
+
+https://noor-ahmed.hashnode.dev/embed-dlls-in-executable
+https://noor-ahmed.hashnode.dev/stop-having-multiple-connection-strings-in-csharp
